@@ -1,0 +1,19 @@
+<view class="nav-container">
+  <view class="nav-search">
+    <van-icon name="search" size="38rpx" class="search" />
+  </view>
+  <view class="nav-tabbar">
+    <van-tabs active="{{ active }}" >
+      <van-tab title="推荐">内容 1</van-tab>
+      <van-tab title="视频">内容 2</van-tab>
+      <van-tab title="热点">内容 3</van-tab>
+      <van-tab title="本地">内容 4</van-tab>
+      <van-tab title="社会">内容 5</van-tab>
+      <van-tab title="军事">内容 6</van-tab>
+    </van-tabs>
+  </view>
+  <view class="nav-userBox">
+    <van-icon name="add-o" size="44rpx" class="mychannel" />
+    <van-icon name="contact" size="44rpx" class="myinfo" />
+  </view>
+</view>

@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#c44943",
+    "navigationBarTitleText": "今日斗条",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "cloud": true
+}
