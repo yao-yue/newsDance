@@ -1,0 +1,70 @@
+@import "../../vant-weapp/common/index.wxss";
+page {
+    background : #e8e8e8;
+}
+.header-container {
+    height: 136rpx;
+    width: 100%;
+    background-color: black;
+    padding: 51rpx 48rpx 51rpx;
+    overflow: hidden;
+    position: relative;
+}
+.avatar {
+    height: 136rpx;
+    width: 136rpx;
+    border: 1rpx solid #ffffff;
+    border-radius: 136rpx;
+    float: left;
+    margin-right: 40rpx;
+}
+.header-container .nickname {
+    height: 34rpx;
+    font-size: 34rpx;
+    color: #ffffff;
+    position: absolute;
+    left: 224rpx;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.info-bar {
+    display: flex;
+    height: 136rpx;
+    background-color: #ffffff;
+}
+.info-bar .info-bar__foucus, .info-bar__fans{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info-bar #info_count{
+    font-size: 22rpx;
+}
+.info-bar #info_tag{
+    display: inline-block;
+    margin-top: 22rpx;
+    font-size: 24rpx;
+    word-spacing: 4rpx;
+}
+.info-mycollection {
+    margin-top: 30rpx;
+    background-color: #ffffff;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+.info-mycollection .im_tag {
+    height: 104rpx;
+    padding: 37rpx 40rpx;
+}
+.info-mycollection .no_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #dbdbdb;
+    padding-bottom: 40rpx;
+}

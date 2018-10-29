@@ -14,6 +14,8 @@
   </view>
   <view class="nav-userBox">
     <van-icon name="add-o" size="44rpx" class="mychannel" />
-    <van-icon name="contact" size="44rpx" class="myinfo" />
+    <van-icon name="contact" size="44rpx" class="myinfo" bindtap="checkInfo"/>
   </view>
 </view>
+
+<button bindtap="clickMe">clickme</button>

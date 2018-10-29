@@ -1,0 +1,18 @@
+<view class="header-container">
+    <image class="avatar"></image>
+    <view class="nickname">我的名字</view>
+</view>
+<view class="info-bar van-hairline--bottom">
+    <view class="info-bar__foucus">
+        <span id="info_count">0</span>
+        <span id="info_tag">关注</span>
+    </view>
+    <view class="info-bar__fans">
+        <span id="info_count">0</span>
+        <span id="info_tag">粉丝</span>
+    </view>
+</view>
+<view class="info-mycollection">
+    <view class="im_tag">我的收藏</view>
+    <view class="no_content">暂无收藏</view>
+</view>
