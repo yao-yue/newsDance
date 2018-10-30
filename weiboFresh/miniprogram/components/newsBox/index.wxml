@@ -12,7 +12,7 @@
             <span class="focus_num">关注数</span>
         </view>
     </view>
-    <image class="img"></image>
+    <image class="img" mode="aspectFill"></image>
     <view class="news-share">
         <icon class="fenxiang" type="fenxiang" color="#f7ca4b" size="30"></icon>
         <span>分享</span>
