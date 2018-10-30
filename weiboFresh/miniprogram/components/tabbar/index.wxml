@@ -17,6 +17,5 @@
             <text class="2" style="color:{{isIndex?'#b1b1b1':'#000000'}}">我的</text>
         </view>
     </block>
-    
 </view>
 <!-- <button bindtap="onTap">click</button> -->

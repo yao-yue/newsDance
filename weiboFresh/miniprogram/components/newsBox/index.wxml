@@ -1,17 +1,20 @@
-<view class="news-wrapp">
+<view class="news-wrapper">
     <view class="news-title">
         <text>愿你在话筒环绕中安睡</text>
     </view>
     <view class="news-tag">
-        <view class="news-time">
-
+        <view class="news-tag-time">
+            <span>更新时间: </span>
+            <text>time</text>
         </view>
-        <view class="news-focus">
-            <icon type="touxiang" ></icon>
+        <view class="news-tag-focus">
+            <icon type="touxiang" size="30rpx" color="#b1b1b1"></icon>
+            <span id="focus_num">关注数</span>
         </view>
     </view>
     <image class="img"></image>
     <view class="news-share">
-
+        <icon type="fenxiang" color="#f7ca4b" size="30"></icon>
+        <span>分享</span>
     </view>
 </view>

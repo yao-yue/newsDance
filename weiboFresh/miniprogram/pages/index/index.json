@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "icon": "../../components/icon/index",
-        "tabbar": "../../components/tabbar/index"
+        "tabbar": "../../components/tabbar/index",
+        "newsBox": "../../components/newsBox/index"
     }
 }
