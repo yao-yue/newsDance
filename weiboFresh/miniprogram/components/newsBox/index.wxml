@@ -1,0 +1,17 @@
+<view class="news-wrapp">
+    <view class="news-title">
+        <text>愿你在话筒环绕中安睡</text>
+    </view>
+    <view class="news-tag">
+        <view class="news-time">
+
+        </view>
+        <view class="news-focus">
+            <icon type="touxiang" ></icon>
+        </view>
+    </view>
+    <image class="img"></image>
+    <view class="news-share">
+
+    </view>
+</view>

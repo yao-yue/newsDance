@@ -7,7 +7,11 @@ Component({
     },
     color: {
       type: String,
-      value: 'blue'
+      value: '#000000'
+    },
+    size: {
+      type: Number,
+      value: '45'
     }
   }
 })

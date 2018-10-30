@@ -1,2 +1,1 @@
-<!--miniprogram/pages/info/info.wxml-->
-<text>miniprogram/pages/info/info.wxml</text>
+<tabbar></tabbar>

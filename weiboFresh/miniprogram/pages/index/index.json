@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "icon": "../../components/icon/index"
+        "icon": "../../components/icon/index",
+        "tabbar": "../../components/tabbar/index"
     }
 }

@@ -1,1 +1,2 @@
-<icon type="shouye" color="black"/>
+<icon type="shouye" color="gray" size="20"/>
+<tabbar isIndex="true"></tabbar>

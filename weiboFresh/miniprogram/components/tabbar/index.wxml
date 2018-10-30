@@ -1,0 +1,22 @@
+
+
+<view class="weibo-tabbar" >
+    <view class="item-left"  bindtap="goHome" data-hi="{{isIndex}}">
+            <icon type="shouye" color="{{isIndex?'#000000':'#b1b1b1'}}" size="45"/>
+            <text class="1" style="color:{{isIndex?'#000000':'#b1b1b1'}}">首页</text>
+    </view>
+    <block wx:if="{{isInner}}">
+        <view class="item-right" style="color:#b1b1b1" bindtap="goShare">
+        <icon type="fenxiang" color="gray" size="45"/>
+            <text class="2">分享</text>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="item-right"  bindtap="goInfo" data-hi="{{isIndex}}">
+        <icon type="wode" color="{{isIndex?'#b1b1b1':'#000000'}}" size="45"/>
+            <text class="2" style="color:{{isIndex?'#b1b1b1':'#000000'}}">我的</text>
+        </view>
+    </block>
+    
+</view>
+<!-- <button bindtap="onTap">click</button> -->

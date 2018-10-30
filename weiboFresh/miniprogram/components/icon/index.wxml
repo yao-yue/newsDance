@@ -1,1 +1,2 @@
-<text class="iconfont icon-{{type}}" style="color:{{color}}" ></text>
+<!-- 注意style里面的分号！ -->
+<text class="iconfont icon-{{type}}" style="color:{{color}}; font-size:{{size}}rpx" ></text>
