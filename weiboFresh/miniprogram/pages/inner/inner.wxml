@@ -11,3 +11,6 @@
     </view>
 </view>
 <tabbar isInner="true"></tabbar>
+
+<subNews class="1"></subNews>
+

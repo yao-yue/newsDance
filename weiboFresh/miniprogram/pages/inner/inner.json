@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "tabbar": "../../components/tabbar/index"
+        "tabbar": "../../components/tabbar/index",
+        "subNews": "../../components/subNews/index"
     }
 }

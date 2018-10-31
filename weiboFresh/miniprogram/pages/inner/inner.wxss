@@ -6,7 +6,6 @@ page {
 }
 .inner-header {
     width: 100%;
-    height: 296rpx;
     padding: 20rpx 40rpx 0;
     box-sizing: border-box;
     display: flex;
@@ -14,20 +13,20 @@ page {
     background-color: #ffffff;
 }
 .inner-header_left {
-    float: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 394rpx;
     color: #d9d9d9;
-    line-height: 66rpx;
+    line-height: 64rpx;
+    padding-bottom: 30rpx;
 }
 .inner-header_left .inner-header-mian-title {
     font-size: 36rpx;
     font-weight: 600;
     color: #000000;
-    line-height: 46rpx;
-    margin-top: 9rpx;
-    margin-bottom: 22rpx;
+    line-height: 48rpx;
+    margin-top: 8rpx;
+    margin-bottom: 20rpx;
     overflow: hidden;
     text-overflow:ellipsis;
     display: -webkit-box;
@@ -44,7 +43,6 @@ page {
 .inner-header_right {
     float: right;
     width: 277rpx;
-    height: 277rpx;
     padding-left: 76rpx;   
 }
 .inner-header_right .inner-header-right-img {
