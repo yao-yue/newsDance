@@ -2,6 +2,7 @@ page {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 .inner-header {
     width: 100%;
@@ -9,7 +10,8 @@ page {
     padding: 20rpx 40rpx 0;
     box-sizing: border-box;
     display: flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
 }
 .inner-header_left {
     float: left;
@@ -17,21 +19,21 @@ page {
     flex-direction: column;
     width: 394rpx;
     color: #d9d9d9;
-    line-height: 72rpx;
+    line-height: 66rpx;
 }
 .inner-header_left .inner-header-mian-title {
     font-size: 36rpx;
     font-weight: 600;
     color: #000000;
-    line-height: 52rpx;
+    line-height: 46rpx;
     margin-top: 9rpx;
+    margin-bottom: 22rpx;
     overflow: hidden;
     text-overflow:ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     width:394rpx;
-    background-color:cornflowerblue;
 }
 .inner-header_left .inner-header-fundMan{
     font-size: 26rpx;
@@ -41,14 +43,13 @@ page {
 }
 .inner-header_right {
     float: right;
-    width: 296rpx;
-    height: 296rpx;
-    padding-left: 76rpx;
-    padding-bottom: 0rpx;
-    background-color: yellow;
+    width: 277rpx;
+    height: 277rpx;
+    padding-left: 76rpx;   
 }
 .inner-header_right .inner-header-right-img {
     width: 200rpx;
     height: 200rpx;
-    background-color: green;
+    background-color: yellow;
+    border-radius: 15rpx;
 }
