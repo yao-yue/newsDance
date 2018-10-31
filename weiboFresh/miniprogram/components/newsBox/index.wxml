@@ -1,4 +1,4 @@
-<view class="news-wrapper">
+<view class="news-wrapper" bind:tap="{{goInner}}">
     <view class="news-title">
         <text>愿你在话筒环绕中安睡,主持人李咏因病去世！</text>
     </view>

@@ -24,12 +24,16 @@ Component({
         })
       }
     },
-    goShare: function () {
+    goShare: () => {
 
     },
     goInfo: (e) => {
         if(e.currentTarget.dataset.hi){
         wx.redirectTo({
+          url: "/pages/info/info"
+        })
+      }else if(e.currentTarget.dataset.in) {
+        wx.navigateTo({
           url: "/pages/info/info"
         })
       }

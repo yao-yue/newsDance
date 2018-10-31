@@ -1,7 +1,7 @@
 
 
 <view class="weibo-tabbar" >
-    <view class="item-left"  bindtap="goHome" data-hi="{{isIndex}}">
+    <view class="item-left"  bindtap="goHome" data-hi="{{isIndex}}" data-in="{{isInner}}">
             <icon type="shouye" color="{{isIndex?'#000000':'#b1b1b1'}}" size="45"/>
             <text class="1" style="color:{{isIndex?'#000000':'#b1b1b1'}}">首页</text>
     </view>
