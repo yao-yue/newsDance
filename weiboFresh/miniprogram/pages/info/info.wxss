@@ -1,1 +1,43 @@
-/* miniprogram/pages/info/info.wxss */
+page {
+    height: 100%;
+    width: 100%;
+}
+.setBox {
+    position: absolute;
+    right: 54rpx;
+    top: 20rpx;
+}
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.info-wrapper .info-avatar-box {
+    height: 180rpx;
+    width: 180rpx;
+    border-radius: 90rpx;
+    background-color: yellow;
+}
+.info-wrapper .info-username {
+    line-height: 82rpx;
+    height: 82rpx;
+    font-size: 30rpx;
+    color: #000000;
+    font-weight: 600;
+}
+.info-wrapper .info-intro {
+    font-size: 24rpx;
+    color: #c1c1c1;
+}
+.info-moreOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    clear: #afafaf;
+    padding-top: 188rpx;
+}

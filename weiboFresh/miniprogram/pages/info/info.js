@@ -7,6 +7,11 @@ Page({
   data: {
 
   },
+  goExit: () => {
+    wx.navigateTo({
+      url: '/pages/exit/exit'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

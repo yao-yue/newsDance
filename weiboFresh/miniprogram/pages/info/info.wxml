@@ -1,1 +1,17 @@
 <tabbar></tabbar>
+<view class="setBox"><icon type="shezhi" color="#000000" size="34" bind:tap="goExit"/></view>
+<view class="info-wrapper">
+    <view class="info-avatar-box">
+        <image class="info-avatar"></image>
+    </view>
+    <view class="info-username">
+        <span>用户55641689415</span>
+    </view>
+    <view class="info-intro">
+        <text decode="{{true}}">简介:&ensp;勤奋学习的好孩子</text>
+    </view>
+</view>
+    <view class="info-moreOver">
+        <text>更多功能，敬请期待</text>
+    </view>
+
