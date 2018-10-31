@@ -1,6 +1,5 @@
 
 .news-wrapper {
-    height: 670rpx;
     width: 670rpx;
     box-shadow: 0 0 40rpx rgba(168 , 168, 168, 0.6);
     border-radius: 20rpx;
@@ -19,16 +18,18 @@
     color: #000000;   
 }
 .news-wrapper .news-tag {
-    padding:18rpx 33rpx 24rpx 35rpx;
     color: #b1b1b1;
     font-size: 24rpx;
-}
-.news-wrapper .news-tag .news-tag-time {
-    float: left;
+    height: 68rpx;
+    line-height: 68rpx;
+    width: 670;
+    margin-left: 34rpx;
+    margin-right: 34rpx;
 }
 .news-wrapper .news-tag .news-tag-focus {
     float: right;   
-    text-align: center;
+    height: 68rpx;
+    line-height: 68rpx;
 }
 .news-wrapper .news-tag .news-tag-focus .wode {
     display: inline-block;
@@ -43,7 +44,8 @@
 .news-wrapper .img {
     background-color: yellow;
     width: 100%;
-    height: 376rpx;
+    height: 382rpx;
+    margin-top: 6rpx;
 }
 .news-wrapper .news-share {
     display: flex;

@@ -1,2 +1,2 @@
-<newsBox bind:tap="goInner"></newsBox>
+<newsBox></newsBox>
 <tabbar isIndex="true"></tabbar>

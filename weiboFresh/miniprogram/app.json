@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/inner/inner",
     "pages/index/index",
     "pages/exit/exit",
-    "pages/info/info",
-    "pages/inner/inner"
+    "pages/info/info"
   ],
   "window": {
     "backgroundTextStyle": "dark",
