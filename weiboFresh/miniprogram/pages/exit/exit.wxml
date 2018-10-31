@@ -1,0 +1,7 @@
+<view class="exit-wrapper">
+    <button class="change">切换账号</button>
+    <button class="exit">退出登入</button>
+</view>
+<view class="key-bottom">
+    <text decode="{{true}}">Thanks for the author of weibo\nThis item is contributined by HappyBirdwe</text>
+</view>

@@ -1,0 +1,28 @@
+page {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+.exit-wrapper {
+height: 500rpx;
+width: 100%;
+padding-top: 200rpx;
+box-sizing: border-box;
+}
+.exit-wrapper .change {
+    margin-bottom: 50rpx;
+    background-color: #ffffff;
+}
+.exit-wrapper .exit {
+    background-color: #ffffff;
+    color: red;
+}
+.key-bottom {
+    position: absolute;
+    color: rgba(144,144,144, .3);
+    font-size: 30rpx;
+    text-indent: 90rpx;
+    height: 100rpx;
+    bottom: 40rpx;
+    margin: 60rpx;
+}
