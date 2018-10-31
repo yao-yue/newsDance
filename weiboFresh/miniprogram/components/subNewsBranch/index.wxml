@@ -1,0 +1,30 @@
+<view class="subNews-branch" >
+        <view class="subNews-branch-time" >
+            <text>4小时前</text>
+        </view>
+        <view class="subNews-branch-content" >
+            <text class="canOpenText {{isFolded?'show':'hide'}}">
+                【按实际还得靠拉双离合放假就房间大少尽快发货就砍胡
+                椒粉和极大恢复健康蝴蝶结卡复活级大佬好烦尽快的哈
+                氪金负的哈数据库和放大混分巨兽凤凰军事电话费is的地方是非得失
+                的开发商可令肌肤开始懂了荆防颗粒时点击了
+                疯狂倒计时离开房间开了圣诞节付款了倒计时了镜看】
+            </text>
+            <view bindtap="toggleText" class="openTap" >{{isFolded?'收起':'全文'}}</view>
+        </view>
+        <view class="subNews-branch-img">
+            <image class="nineImg" style="height:20rpx"></image>
+        </view>
+        <view class="subNews-branch-from">
+            <text>来自</text>
+            <image class="formManImg"></image>
+            <text class="subNews-branch-fromName">无敌少年飞天怪！</text>
+        </view>
+        <view class="subNews-branch-bottom" >
+            <icon class="dianzan" type="dianzan" color="#cdcccc" size="34"></icon>
+            <text class="dianzanNum">1870</text>
+            <icon class="pinglun" type="message" color="#cdcccc" size="28"></icon>
+            <text class="pinglunNum">673</text>
+            <icon class="fenxiang" type="fenxiang" color="#cdcccc" size="28"></icon>
+        </view>
+</view>

@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "subNewsBranch": "../subNewsBranch/index"
+    "icon": "../icon/index"
   }
 }
