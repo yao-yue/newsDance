@@ -4,10 +4,6 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    open: {
-      type: Boolean,
-      value: true
-    }
   },
 
   /**
@@ -21,12 +17,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    openCatalog: function(e) {
-      // let open = !e.currentTarget.dataset.hi;
+    openCatalog: function() {
       this.setData({
-        open
+        open: true
       })
-      console.log(open);
+    },
+    closeCatalog: function() {
+      this.setData({
+        open: false
+      })
     }
   }
 })

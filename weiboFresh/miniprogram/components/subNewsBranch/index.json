@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "icon": "../icon/index"
+    "icon": "../icon/index",
+    "subImage": "../subImage/index"
   }
 }

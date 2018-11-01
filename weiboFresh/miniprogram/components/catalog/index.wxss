@@ -1,15 +1,25 @@
-page {
+page .catalog-main{
     height: 100%;
     width: 100%;
-}
-.catalog-main{
-    right: 0;
-    top: 0;
-    width: 56%;
-    height: 100%;
     position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 99;
 }
-.catalog-main .catalog-main-title{
+
+.catalog-main .catalog-main-left {
+    height: 100%;
+    width: 44%;
+    background-color: green;
+    opacity: 0;
+}
+.catalog-main .catalog-main-right {
+    height: 100%;
+    width: 56%;
+    background: #ffffff;
+}
+.catalog-main-right .catalog-main-title{
     background-color: #f7ca4b;
     font-size: 38rpx;
     height: 110rpx;
@@ -29,6 +39,7 @@ page {
     font-size: 32rpx;
     background-color: #ffffff;
     position: relative;
+    z-index: 999;
 }
 .subTitle-item::after {
     content: "";
@@ -42,7 +53,7 @@ page {
     transform-origin: 0 0;
 }
 .catalog-open {
-    z-index: 99999;
+    z-index: 99;
     box-sizing: border-box;
     position: fixed;
     height: 80rpx;

@@ -13,7 +13,7 @@
             <view bindtap="toggleText" class="openTap" >{{isFolded?'收起':'全文'}}</view>
         </view>
         <view class="subNews-branch-img" >
-            <image class="nineImg" style="height:20rpx"></image>
+            <subImage class="nineImg"></subImage>
         </view>
         <view class="subNews-branch-from" bindtap="goDetail">
             <text>来自</text>

@@ -1,14 +1,17 @@
-<view class="catalog-main  {{open?'catalog-main-slideOut':''}}">
-    <view class="catalog-main-title">
-        <text class="1">主标题</text>
-    </view>
-    <view class="catalog-main-subTitle">
-        <view class="subTitle-item">
-            <text>副标题</text>
+<view class="{{open?'catalog-main':''}}" catch:tap="closeCatalog">
+    <view class="catalog-main-left"></view>
+    <view class="catalog-main-right">
+        <view class="catalog-main-title">
+            <text class="1">主标题</text>
+        </view>
+        <view class="catalog-main-subTitle">
+                <view class="subTitle-item" >
+                    <text>副标题</text>
+                </view>
         </view>
     </view>
 </view>
-<view class="catalog-open" bind:tap="openCatalog" data-hi="{{open}}">
+<view class="catalog-open" bind:tap="openCatalog">
     <icon class="muluIcon" type="muluzhankai" size="32" color="#ffffff"></icon>
     <text class="mulu">目录</text>
 </view>

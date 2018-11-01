@@ -1,4 +1,4 @@
-<view class="inner-wrapper" bind:tap="closeCatalog" data-hi="{{catalogIsOpen}}">
+<view class="inner-wrapper" >
     <view class="inner-header">
         <view class="inner-header_left">
             <view class="inner-header-mian-title">
@@ -13,5 +13,5 @@
     </view>
     <tabbar isInner="true"></tabbar>
     <subNews class="1"></subNews>
-    <catalog open="{{catalogIsOpen}}"></catalog>
+    <catalog ></catalog>
 </view>
