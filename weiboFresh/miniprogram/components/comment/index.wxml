@@ -7,16 +7,23 @@
         </view>
         <view class="comment-info-right">
             <text class="dianzanNum">9</text>
-            <icon type="dianzan" size="24" color="#cdcccc"></icon>
+            <icon type="dianzan" size="26" color="#cdcccc"></icon>
         </view>
     </view>
     <view class="comment-content">
-        <text class="content-main"></text>
-        <view class="comment-response">
-            <text class="response1" decode="{{true}}">用户名111&ensp;评论体</text>
-            <text class="response2" decode="{{true}}">用户名222&ensp;评论体</text>
-            <text class="responesNum">共11条回复</text>
+        <text class="comment-content-main">从十九大看了计算机快乐十分哈克龙飞洒看了你萨克的斯科拉垃圾撒分开</text>
+        <view class="comment-content-response">
+            <view class="response-box">
+                <view>
+                    <text class="response1" decode="{{true}}">用户名111:&ensp;</text>
+                    <text>评论体超级无敌蛇皮怪怪皮皮皮牛逼卢本伟啥都好说绿卡江口街道</text>
+                </view>
+                <view>
+                    <text class="response2" decode="{{true}}">用户名111:&ensp;</text>
+                    <text>评论体</text>
+                </view>
+                <text class="responseNum">共11条回复 ></text>
+            </view>
         </view>
     </view>
-    
 </view>
