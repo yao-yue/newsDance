@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "icon": "../../components/icon/index",
+        "comment": "../../components/comment/index"
+    }
+}

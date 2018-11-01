@@ -1,0 +1,69 @@
+.comment-sub-wrapper {
+    width: 100%;
+    padding: 20rpx 50rpx 20rpx 40rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.comment-sub-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    border-top: 1rpx solid rgba(177, 177, 177, 0.8);
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}
+.comment-sub-wrapper .comment-sub-info {
+    height: 100rpx;
+    box-sizing: border-box;
+}
+.comment-sub-info .comment-sub-info-avatar {
+    float: left;
+    height: 80rpx;
+    width: 80rpx;
+    background-color: green;
+    border-radius: 40rpx;
+    margin-right: 15rpx;
+}
+.comment-sub-info .comment-sub-info-center {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 80rpx;
+    line-height: 34rpx;
+    padding-top: 8rpx;
+    padding-bottom: 13rpx;
+    font-size: 24rpx;
+    width: 200rpx;
+    color: #b1b1b1;
+}
+.comment-sub-info-center .comment-sub-info-username {
+    font-size: 28rpx;
+    color: #858585;
+}
+.comment-sub-info .comment-sub-info-right {
+    float: right;
+    margin-top: -70rpx;
+    margin-right: -40rpx;
+    width: 100rpx;
+    height: 80rpx;
+    font-size: 20rpx;  
+    color: #858585;
+}
+.comment-sub-info-right .dianzanNum-sub {
+    margin-right: 6rpx;
+}
+.comment-sub-wrapper .comment-sub-content {
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    width: 540rpx;
+    margin-left: 95rpx;
+    margin-right: 20rpx;
+    border-radius: 20rpx;
+    font-size: 20rpx;
+    padding: 18rpx 10rpx 18rpx;
+    line-height: 28rpx;
+    margin-top: -14rpx;
+}

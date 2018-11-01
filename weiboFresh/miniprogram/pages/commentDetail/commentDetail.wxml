@@ -1,0 +1,20 @@
+<comment class="1"></comment>
+<view class="comment-sub-wrapper">
+    <view class="comment-sub">
+        <view class="comment-sub-info">
+            <image class="comment-sub-info-avatar"></image>
+            <view class="comment-sub-info-center">
+                <text class="comment-sub-info-username">提莫大魔王</text>
+                <text class="comment-sub-info-time">42分钟前</text>
+            </view>
+            <view class="comment-sub-info-right">
+                <text class="dianzanNum-sub">9</text>
+                <icon type="dianzan" size="26" color="#cdcccc"></icon>
+            </view>
+        </view>
+        <view class="comment-sub-content">
+            <text >回复@罗花同学:</text>
+            <text >没有什么能阻挡斯卡迪就开始拉家带口萨达撒较好的杀寇决</text>
+        </view>
+    </view>
+</view>
