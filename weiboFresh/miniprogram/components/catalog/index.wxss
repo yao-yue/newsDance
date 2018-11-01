@@ -1,0 +1,71 @@
+page {
+    height: 100%;
+    width: 100%;
+}
+.catalog-main{
+    right: 0;
+    top: 0;
+    width: 56%;
+    height: 100%;
+    position: fixed;
+}
+.catalog-main .catalog-main-title{
+    background-color: #f7ca4b;
+    font-size: 38rpx;
+    height: 110rpx;
+    line-height: 110rpx;
+    padding-left: 38rpx;
+    color: #ffffff;
+}
+.catalog-main-subTitle {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-main-subTitle .subTitle-item {
+    padding-left: 32rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 32rpx;
+    background-color: #ffffff;
+    position: relative;
+}
+.subTitle-item::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    border-bottom: 1rpx solid rgba(177, 177, 177, 0.6);
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}
+.catalog-open {
+    z-index: 99999;
+    box-sizing: border-box;
+    position: fixed;
+    height: 80rpx;
+    width: 140rpx;
+    font-size: 28rpx;
+    background-color: #f7ca4b;
+    line-height: 80rpx;
+    padding-left: 20rpx;
+    padding-right: 26rpx;
+    bottom: 154rpx;
+    right: 0;
+    border-top-left-radius: 40rpx;
+    border-bottom-left-radius: 40rpx;  
+    color: #ffffff;
+    box-shadow: 0rpx 0rpx 16rpx rgba(128,128,128, 0.6);
+}
+.catalog-open .muluIcon{
+    margin-right: 12rpx;
+}
+.catalog-open .mulu {
+    position: absolute;
+    bottom: 1rpx;
+}
+.catalog-main-slideOut{
+    transform: translate(0%,100%); 
+  }
