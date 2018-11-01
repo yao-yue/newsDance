@@ -18,6 +18,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goCommentDetail: function() {
+      wx.navigateTo({
+        url: '/pages/commentDetail/commentDetail'
+      })
+    }
   }
 })

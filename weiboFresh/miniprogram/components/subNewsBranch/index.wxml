@@ -24,7 +24,7 @@
         <view class="subNews-branch-bottom" >
             <icon class="dianzan" type="dianzan" color="#cdcccc" size="34"></icon>
             <text class="dianzanNum">1870</text>
-            <icon class="pinglun" type="message" color="#cdcccc" size="28"></icon>
+            <icon class="pinglun" type="message" color="#cdcccc" size="32"></icon>
             <text class="pinglunNum">673</text>
             <icon class="fenxiang" type="fenxiang" color="#cdcccc" size="28"></icon>
         </view>

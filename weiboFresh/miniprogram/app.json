@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/detail/detail",
     "pages/inner/inner",
     "pages/index/index",
+    "pages/commentDetail/commentDetail",
+    "pages/detail/detail",
     "pages/exit/exit",
     "pages/info/info"
   ],

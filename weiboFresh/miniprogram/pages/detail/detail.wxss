@@ -34,7 +34,11 @@
     box-sizing: border-box;
     width: 670rpx;
     font-size: 35rpx;
-    line-height: 40rpx; 
+    line-height: 46rpx; 
+}
+.detail-main-content .content-detial-top {
+    display: inline-block;
+    margin-top: -30rpx; 
 }
 .detail-main .detail-main-bottom {
     font-size: 26rpx;

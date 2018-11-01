@@ -22,7 +22,7 @@
                     <text class="response2" decode="{{true}}">用户名111:&ensp;</text>
                     <text>评论体</text>
                 </view>
-                <text class="responseNum">共11条回复 ></text>
+                <text class="responseNum" bind:tap="goCommentDetail">共11条回复 ></text>
             </view>
         </view>
     </view>

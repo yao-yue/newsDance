@@ -20,11 +20,16 @@
     display: flex;
     flex-direction: column;
     height: 80rpx;
-    line-height: 36rpx;
+    line-height: 34rpx;
     padding-top: 8rpx;
     padding-bottom: 13rpx;
     font-size: 24rpx;
     width: 200rpx;
+    color: #b1b1b1;
+}
+.comment-info-center .comment-info-username {
+    font-size: 28rpx;
+    color: #858585;
 }
 .comment-info .comment-info-right {
     float: right;
@@ -33,6 +38,7 @@
     width: 100rpx;
     height: 80rpx;
     font-size: 20rpx;  
+    color: #858585;
 }
 .comment-info-right .dianzanNum {
     margin-right: 6rpx;
@@ -46,7 +52,10 @@
     line-height: 45rpx;
 }
 .comment-content .comment-content-main {
-
+    font-size: 30rpx;
+    line-height: 40rpx;
+    margin-top: -26rpx;
+    display: inline-block;
 }
 .comment-content .comment-content-response {
     padding: 30rpx 20rpx 45rpx 0;
@@ -78,4 +87,5 @@
 }
 .response-box .responseNum {
     font-size: 26rpx;
+    z-index: 999;
 }

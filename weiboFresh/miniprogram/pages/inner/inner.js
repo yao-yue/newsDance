@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    catalogIsOpen: false,
 
+  },
+  closeCatalog: (e) => {
+    let catalogIsOpen = e.currentTarget.dataset.hi;
+    wx.setData({
+      catalogIsOpen
+    })
+    console.log(catalogIsOpen)
   },
 
   /**

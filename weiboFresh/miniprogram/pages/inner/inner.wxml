@@ -1,16 +1,17 @@
-<view class="inner-header">
-    <view class="inner-header_left">
-        <view class="inner-header-mian-title">
-            <span>解密唐嫣罗晋婚礼: 森林中的精灵一二三四五六七八九十</span>
+<view class="inner-wrapper" bind:tap="closeCatalog" data-hi="{{catalogIsOpen}}">
+    <view class="inner-header">
+        <view class="inner-header_left">
+            <view class="inner-header-mian-title">
+                <span>解密唐嫣罗晋婚礼: 森林中的精灵一二三四五六七八九十</span>
+            </view>
+            <text class="inner-header-fundMan" decode="{{true}}">创建者:&ensp;微博婚礼</text>
+            <text class="inner-header-focusNum">7人关注</text>
         </view>
-        <text class="inner-header-fundMan" decode="{{true}}">创建者:&ensp;微博婚礼</text>
-        <text class="inner-header-focusNum">7人关注</text>
+        <view class="inner-header_right">
+            <image class="inner-header-right-img"></image>
+        </view>
     </view>
-    <view class="inner-header_right">
-        <image class="inner-header-right-img"></image>
-    </view>
+    <tabbar isInner="true"></tabbar>
+    <subNews class="1"></subNews>
+    <catalog open="{{catalogIsOpen}}"></catalog>
 </view>
-<tabbar isInner="true"></tabbar>
-
-<subNews class="1"></subNews>
-

@@ -28,9 +28,13 @@
 }
 .subNews-branch .subNews-branch-content {
     font-size: 30rpx;
-    line-height: 47rpx;
+    line-height: 42rpx;
     width: 100%;
     z-index: 999;
+}
+.subNews-branch-content .canOpenText {
+    display: inline-block;
+    margin-top: -52rpx;
 }
 .subNews-branch-content .hide{
     display: -webkit-box; 
@@ -71,6 +75,7 @@
     margin-right: 6rpx;
 } 
 .subNews-branch .subNews-branch-bottom {
+    margin-top: -6rpx;
     height: 73rpx;
     font-size: 22rpx;
     line-height: 73rpx;
