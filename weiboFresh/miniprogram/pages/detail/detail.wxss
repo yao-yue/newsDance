@@ -1,0 +1,76 @@
+.detail-main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28rpx 40rpx 0;
+}
+.detail-main .detail-main-header {
+    box-sizing: border-box;
+    height: 80rpx;
+    width: 100%;
+}
+.detail-main-header .header-img {
+    float: left;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 16rpx;
+    background-color: green;
+    margin-right: 18rpx;
+}
+.detail-main-header .header-right {
+    display: flex;
+    flex-direction: column;
+    line-height: 36rpx;
+    padding-top: 6rpx;
+    padding-bottom: 6rpx;  
+}
+.header-right .header-right-title {
+    font-size: 28rpx;
+}
+.header-right .header-right-time {
+    font-size: 24rpx;
+    color: #b1b1b1;
+}
+.detail-main .detail-main-content {
+    box-sizing: border-box;
+    width: 670rpx;
+    font-size: 35rpx;
+    line-height: 40rpx; 
+}
+.detail-main .detail-main-bottom {
+    font-size: 26rpx;
+    height: 108rpx;
+    line-height: 108rpx;
+    color: #b1b1b1;
+}
+.detail-main-bottom .fromImg {
+    height: 44rpx;
+    width: 44rpx;
+    border-radius: 22rpx;
+    background-color: green;
+    margin-bottom: -10rpx;
+    margin-left: 6rpx;
+    margin-right: 6rpx;
+}
+.detail-comment {
+    width: 100%;
+}
+.detail-comment .detail-comment-topBar {
+    box-sizing: border-box;
+    font-weight: 700;
+    height: 74rpx;
+    line-height: 74rpx;
+    font-size: 30rpx;
+    padding-left: 40rpx;
+    position: relative;
+}
+.detail-comment-topBar::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    border-bottom: 1rpx solid rgba(177, 177, 177, 0.6);
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}

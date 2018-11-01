@@ -1,0 +1,28 @@
+<view class="detail-main">
+    <view class="detail-main-header">
+        <view class="header-img"></view>
+        <view class="header-right">
+            <text class="header-right-title">昨天今晨你应该知道的事</text>
+            <text class="header-right-time" decode="{{true}}">昨天&ensp;06:59</text>
+        </view>
+    </view>
+    <view class="detail-main-content">
+        <text class="1">
+            【啥打火机的呼声书法家是否健康红烧鸡块返回点击康师傅就诶耦合房间数蝴蝶结卡复活
+            s牛啥大厦将颠后视镜看到挨个读书卡很快就到黄山和抵抗力撒打开了拉萨很简单打开撒可兑
+            思考和打击闪电借款砂浆款对话框大数据卡号的健康好尽快的哈就开始卡大口径手机卡的
+            大数据阿卡的好时机卡号的健康手机卡的巴萨阿不对劲安居客汇顶科技撒谎的啊数据】
+            </text>
+    </view>
+    <view class="detail-main-bottom">
+        <text class="1">来自</text>
+        <image class="fromImg"></image>
+        <text class="2">中国水运报</text>
+    </view>
+</view>
+<view class="detail-comment">
+    <view class="detail-comment-topBar">
+        <text class="bar">热门评论</text>
+    </view>
+    <comment></comment>
+</view>
