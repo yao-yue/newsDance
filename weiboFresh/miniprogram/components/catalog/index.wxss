@@ -53,7 +53,7 @@ page .catalog-main{
     transform-origin: 0 0;
 }
 .catalog-open {
-    z-index: 99;
+    z-index: 9;
     box-sizing: border-box;
     position: fixed;
     height: 80rpx;

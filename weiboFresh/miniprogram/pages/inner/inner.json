@@ -2,7 +2,7 @@
     "usingComponents": {
         "tabbar": "../../components/tabbar/index",
         "subNews": "../../components/subNews/index",
-        "catalog": "../../components/catalog/index",
+        "catalog": "../../components/catalog/index"
         
     }
 }

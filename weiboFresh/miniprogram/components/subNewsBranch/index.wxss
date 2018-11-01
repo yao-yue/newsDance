@@ -24,13 +24,13 @@
     font-size: 24rpx;
     line-height: 77rpx;
     color: #a7a7ac;
-    z-index: 99;
+    z-index: 9;
 }
 .subNews-branch .subNews-branch-content {
     font-size: 30rpx;
     line-height: 42rpx;
     width: 100%;
-    z-index: 99;
+    z-index: 9;
 }
 .subNews-branch-content .canOpenText {
     display: inline-block;
@@ -47,16 +47,12 @@
     text-overflow:ellipsis;
 }
 .subNews-branch-content .openTap {
-    z-index: 99;
+    z-index: 9;
     font-size: 30rpx;
     color: #5b6a92;
 }
-.subNews-branch .subNews-branch-img {
-    background-color: yellow;
-    height: 200rpx;  
-}
 .subNews-branch .subNews-branch-from {
-    z-index: 99;
+    z-index: 9;
     box-sizing: border-box;
     height: 84rpx;
     line-height: 84rpx;
