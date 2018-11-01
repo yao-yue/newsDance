@@ -16,7 +16,7 @@
     height: 200%;
     top: 0;
     left: 0;
-    border-top: 1rpx solid rgba(177, 177, 177, 0.4);
+    border-top: 1rpx solid rgba(177, 177, 177, 0.6);
     transform: scale(0.5);
     transform-origin: 0 0;
   }

@@ -1,9 +1,9 @@
 <view class="subNews-branch" >
-        <view class="subNews-branch-time" >
+        <view class="subNews-branch-time" bindtap="goDetail">
             <text>4小时前</text>
         </view>
         <view class="subNews-branch-content" >
-            <text class="canOpenText {{isFolded?'show':'hide'}}">
+            <text class="canOpenText {{isFolded?'show':'hide'}}" bindtap="goDetail">
                 【按实际还得靠拉双离合放假就房间大少尽快发货就砍胡
                 椒粉和极大恢复健康蝴蝶结卡复活级大佬好烦尽快的哈
                 氪金负的哈数据库和放大混分巨兽凤凰军事电话费is的地方是非得失
@@ -12,14 +12,15 @@
             </text>
             <view bindtap="toggleText" class="openTap" >{{isFolded?'收起':'全文'}}</view>
         </view>
-        <view class="subNews-branch-img">
+        <view class="subNews-branch-img" >
             <image class="nineImg" style="height:20rpx"></image>
         </view>
-        <view class="subNews-branch-from">
+        <view class="subNews-branch-from" bindtap="goDetail">
             <text>来自</text>
             <image class="formManImg"></image>
             <text class="subNews-branch-fromName">无敌少年飞天怪！</text>
         </view>
+               
         <view class="subNews-branch-bottom" >
             <icon class="dianzan" type="dianzan" color="#cdcccc" size="34"></icon>
             <text class="dianzanNum">1870</text>

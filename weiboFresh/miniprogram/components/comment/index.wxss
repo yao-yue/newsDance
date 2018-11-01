@@ -1,0 +1,34 @@
+.comment-wrapper {
+    width: 100%;
+    padding: 20rpx 40rpx 0;
+    box-sizing: border-box;
+}
+.comment-wrapper .comment-info {
+    height: 100rpx;
+    box-sizing: border-box;
+}
+.comment-info .comment-info-avatar {
+    float: left;
+    height: 80rpx;
+    width: 80rpx;
+    background-color: green;
+    border-radius: 40rpx;
+    margin-right: 15rpx;
+}
+.comment-info .comment-info-center {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 80rpx;
+    line-height: 36rpx;
+    padding-top: 8rpx;
+    padding-bottom: 13rpx;
+    font-size: 24rpx;
+    width: 200rpx;
+}
+.comment-info .comment-info-right {
+    float: right;
+    margin-bottom: -180rpx;
+    width: 100rpx;
+    height: 80rpx;
+}

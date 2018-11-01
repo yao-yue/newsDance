@@ -1,0 +1,22 @@
+<view class="comment-wrapper">
+    <view class="comment-info">
+        <image class="comment-info-avatar"></image>
+        <view class="comment-info-center">
+            <text class="comment-info-username">提莫大魔王</text>
+            <text class="comment-info-time">42分钟前</text>
+        </view>
+        <view class="comment-info-right">
+            <text class="dianzanNum">9</text>
+            <icon type="dianzan" size="24" color="#cdcccc"></icon>
+        </view>
+    </view>
+    <view class="comment-content">
+        <text class="content-main"></text>
+        <view class="comment-response">
+            <text class="response1" decode="{{true}}">用户名111&ensp;评论体</text>
+            <text class="response2" decode="{{true}}">用户名222&ensp;评论体</text>
+            <text class="responesNum">共11条回复</text>
+        </view>
+    </view>
+    
+</view>
