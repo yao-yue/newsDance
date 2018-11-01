@@ -1,0 +1,21 @@
+<view class="subImage-wrapper">
+    <block wx:if="{{imgNum==1}}">
+        <view class="ImgBox1">
+            <image class="img1" src="../../images/test.jpg"></image>
+        </view>
+    </block>
+    <block wx:if="{{imgNum==4}}">
+        <view class="ImgBox4">
+            <image class="img1" src="../../images/test.jpg"></image>
+            <image class="img1" src="../../images/test.jpg"></image>
+            <image class="img1" src="../../images/test.jpg"></image>
+            <image class="img1" src="../../images/test.jpg"></image>
+        </view>
+    </block>
+    <block wx:if="{{imgNum!=4&&imgNum!=1}}">
+        <view class="ImgBoxN">
+                <image class="img1" src="../../images/test.jpg"></image>
+                <image class="img1" src="../../images/test.jpg"></image>
+        </view>
+    </block>
+</view>

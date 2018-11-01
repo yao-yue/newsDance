@@ -1,0 +1,26 @@
+.subImage-wrapper {
+    box-sizing: border-box;
+}
+.subImage-wrapper .Imgbox1{
+    width: 670rpx;
+    height: 488rpx;
+    background-color: green;
+    border-radius: 10rpx;   
+}
+.subImage-wrapper .Imgbox4{
+    width: 396rpx;
+    height: 396rpx;
+    border-radius: 6rpx;
+    background-color: green;
+    display: grid;
+    grid-gap: 12rpx; 
+    align-content: start;
+}
+.subImage-wrapper .ImgboxN{
+    border-radius: 6rpx;
+    background-color: green;
+    display: grid;
+    grid-gap: 12rpx; 
+    align-content: start;
+}
+
