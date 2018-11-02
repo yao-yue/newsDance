@@ -1,0 +1,7 @@
+<view class="imagePage-wrapper">
+    <view class="indexOfImg">
+        <text class="1">1/9</text>
+    </view>
+    <image class="imageDo"></image>
+</view>
+

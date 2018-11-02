@@ -1,2 +1,5 @@
-<newsBox></newsBox>
+<block >
+    <newsBox></newsBox>
+</block>
+
 <tabbar isIndex="true"></tabbar>

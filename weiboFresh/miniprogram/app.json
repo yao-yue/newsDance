@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/imageDo/imageDo",
     "pages/index/index",
     "pages/inner/inner",
     "pages/commentDetail/commentDetail",
