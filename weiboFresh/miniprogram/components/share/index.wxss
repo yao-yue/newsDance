@@ -1,12 +1,22 @@
-.share-warpper {
-   height: 100%;
-   width: 100%;
-   z-index: 99rpx;
+page .share-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 100;
+    padding-top: 130rpx;
+    background-color: rgba(144, 144, 144, 0.6);
 }
 .share-hidden {
     display: none;
 }
-.share-warpper .share-content {
+/* 注意注意！！！此处有一个坑 不要在前面加作为三目运算符的类名(.share-wrapper)，这样会让子类不被选中 */
+.share-content {
+    box-sizing: border-box;
+    position: fixed;
+    left: 80rpx;
     height: 700rpx;
     width: 590rpx;
     display: flex;
@@ -15,32 +25,30 @@
     align-items: center;
     background-color: #ffffff;
     padding: 30rpx 45rpx 40rpx;
-    position: fixed;
-    top: 130rpx;
-    right: 80rpx;
 }
 .share-content .newsMainImg {
     height: 125rpx;
     width: 125rpx;
     border-radius: 30rpx;
+    background-color: yellow;
 }
-
 .share-content .newsMainTitle {
-    display: inline-block;
+    display: block;
     height: 70rpx;
     line-height: 70rpx;
     font-weight: 600rpx;
-    font-size: 30rpx;
+    font-size: 34rpx;
     overflow: hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    width:500px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:500rpx;
 }
 .share-content .focusNum {
+    display: block;
     font-size: 26rpx;
     color: #858485;
 }
-.share-content .miniApp {
+.share-content .miniAppImg {
     box-sizing: border-box;
     height: 328rpx;
     width: 288rpx;
@@ -48,7 +56,7 @@
     overflow: hidden;
 }
 .share-content .share-content-handle{
-    display: inline-block;
+    display: block;
     margin-bottom: 32rpx;
     font-size: 26rpx;
     color: #969696;
@@ -58,25 +66,25 @@
     color: #858484;
 }
 
-.share-warpper .share-bottom {
+.share-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 246rpx;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
-.share-bottom .shareText {
+.shareText {
     height: 120rpx;
     line-height: 120rpx;
     font-size: 28rpx;
-    margin: 0 auto;
+    text-align: center;
 }
 .share-bottom .shareBar {
     width: 100%;
     height: 126rpx;
     display: flex;
-    background-color: #ffffff;
 }
 .shareBar .shareBar-left, .shareBar-right {
     width: 50%;
@@ -84,4 +92,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 26rpx;
 }

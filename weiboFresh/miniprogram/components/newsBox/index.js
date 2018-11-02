@@ -23,8 +23,8 @@ Component({
         url: '../../pages/inner/inner'
       })
     },
-    openShare: function (e) {
-      let shareIsOpen = !e.currentTarget.dataset.hi;
+    openShare: function () {
+      let shareIsOpen = !shareIsOpen;
       this.setData({
         shareIsOpen
       })

@@ -1,3 +1,4 @@
+<share show="{{shareIsOpen}}"></share>
 <view class="news-wrapper" >
     <view class="news-wrapper-up" bind:tap="goInner">
         <view class="news-title">
@@ -13,9 +14,9 @@
     </view>
     <image class="img" mode="aspectFill"></image>
     </view>
-    <view class="news-share" bindtap="openShare" data-hi="{{shareIsOpen}}">
+    <view class="news-share" bindtap="openShare" >
         <icon class="fenxiang" type="fenxiang" color="#f7ca4b" size="30"></icon>
         <span>分享</span>
     </view>
 </view>
-<share show="{{shareIsOpen}}"></share>
+

@@ -1,11 +1,11 @@
-<view class="{{show?'share-wrapper':'share-hidden'}}">
+<view class="{{show?'share-wrapper':'share-hidden'}}" bind:tap="closeShare">
     <view class="share-content">
         <image class="newsMainImg"></image>
-        <text class="newsMainTitle" decode="{{true}}">解密唐嫣罗晋婚礼:&ensp;森林中的精灵十大撒旦</text>
+        <text class="newsMainTitle" decode="{{true}}">解密唐嫣罗晋婚礼:&ensp;森林中的精灵十大撒旦就等哈就可获得</text>
         <text class="focusNum">8人关注</text>
-        <image class="miniAppImg" src=""></image>
-            <text class="share-content-handle">长按二维码查看精选微博</text>
-            <text class="share-content-intro"></text>
+        <image class="miniAppImg" src="../../images/HappyBirdwe.jpg"></image>
+            <text class="share-content-handle">长按二维码查看这只绿鸟</text>
+            <text class="share-content-intro">转发这只绿鸟，今年会给你带来好运，万BUG不侵~~</text>
     </view>
     <view class="share-bottom">
         <view class="shareText">
