@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    shareIsOpen: false,
   },
 
   /**
@@ -22,6 +22,13 @@ Component({
       wx.navigateTo({
         url: '../../pages/inner/inner'
       })
-    }
-  }
+    },
+    openShare: function (e) {
+      let shareIsOpen = !e.currentTarget.dataset.hi;
+      this.setData({
+        shareIsOpen
+      })
+    },
+  },
+
 })

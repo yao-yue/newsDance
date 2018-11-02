@@ -48,6 +48,7 @@
     margin-top: 6rpx;
 }
 .news-wrapper .news-share {
+    z-index: 9;
     display: flex;
     height: 88rpx;
     justify-content: center;

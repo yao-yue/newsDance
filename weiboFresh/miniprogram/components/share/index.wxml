@@ -1,0 +1,25 @@
+<view class="{{show?'share-wrapper':'share-hidden'}}">
+    <view class="share-content">
+        <image class="newsMainImg"></image>
+        <text class="newsMainTitle" decode="{{true}}">解密唐嫣罗晋婚礼:&ensp;森林中的精灵十大撒旦</text>
+        <text class="focusNum">8人关注</text>
+        <image class="miniAppImg" src=""></image>
+            <text class="share-content-handle">长按二维码查看精选微博</text>
+            <text class="share-content-intro"></text>
+    </view>
+    <view class="share-bottom">
+        <view class="shareText">
+            <text class="1">分享</text>
+        </view>
+        <view class="shareBar">
+            <view class="shareBar-left">
+                <icon type="xiazai" size="42" color="#000000"></icon>
+                <text class="1">保存到相册</text>
+            </view>
+            <view class="shareBar-right">
+                <icon type="zhuanfa" size="42" color="#000000"></icon>
+                <text class="1">转发给好友</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,87 @@
+.share-warpper {
+   height: 100%;
+   width: 100%;
+   z-index: 99rpx;
+}
+.share-hidden {
+    display: none;
+}
+.share-warpper .share-content {
+    height: 700rpx;
+    width: 590rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30rpx 45rpx 40rpx;
+    position: fixed;
+    top: 130rpx;
+    right: 80rpx;
+}
+.share-content .newsMainImg {
+    height: 125rpx;
+    width: 125rpx;
+    border-radius: 30rpx;
+}
+
+.share-content .newsMainTitle {
+    display: inline-block;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-weight: 600rpx;
+    font-size: 30rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:500px;
+}
+.share-content .focusNum {
+    font-size: 26rpx;
+    color: #858485;
+}
+.share-content .miniApp {
+    box-sizing: border-box;
+    height: 328rpx;
+    width: 288rpx;
+    padding: 20rpx 0;
+    overflow: hidden;
+}
+.share-content .share-content-handle{
+    display: inline-block;
+    margin-bottom: 32rpx;
+    font-size: 26rpx;
+    color: #969696;
+}
+.share-content .share-content-intro {
+    font-size: 20rpx;
+    color: #858484;
+}
+
+.share-warpper .share-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 246rpx;
+    box-sizing: border-box;
+}
+.share-bottom .shareText {
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 28rpx;
+    margin: 0 auto;
+}
+.share-bottom .shareBar {
+    width: 100%;
+    height: 126rpx;
+    display: flex;
+    background-color: #ffffff;
+}
+.shareBar .shareBar-left, .shareBar-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
