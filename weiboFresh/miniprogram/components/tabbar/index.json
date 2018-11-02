@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "icon": "../../components/icon/index"
+    "icon": "../icon/index",
+    "share": "../share/index"
   }
 }

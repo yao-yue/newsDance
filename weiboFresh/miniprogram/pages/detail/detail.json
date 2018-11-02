@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "comment": "../../components/comment/index"
+        "comment": "../../components/comment/index",
+        "tabbar": "../../components/tabbar/index"
     }
 }

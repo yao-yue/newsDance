@@ -1,3 +1,4 @@
+<tabbar isInner="true"></tabbar>
 <view class="detail-main">
     <view class="detail-main-header">
         <view class="header-img"></view>
@@ -26,3 +27,4 @@
     </view>
     <comment></comment>
 </view>
+
