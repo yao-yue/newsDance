@@ -1,21 +1,28 @@
-<view class="subImage-wrapper">
-    <block wx:if="{{imgNum==1}}">
-        <view class="ImgBox1">
-            <image class="img1" src="../../images/test.jpg"></image>
+
+    <block wx:if="{{imgNum===1}}">
+        <view class="ImgBox_one">
+            <image class="imgOne"  src="../../images/test.jpg" mode="aspectFill"></image>
         </view>
     </block>
-    <block wx:if="{{imgNum==4}}">
-        <view class="ImgBox4">
-            <image class="img1" src="../../images/test.jpg"></image>
-            <image class="img1" src="../../images/test.jpg"></image>
-            <image class="img1" src="../../images/test.jpg"></image>
-            <image class="img1" src="../../images/test.jpg"></image>
+    <block wx:if="{{imgNum===4}}">
+        <view class="ImgBox_four">
+            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
         </view>
     </block>
-    <block wx:if="{{imgNum!=4&&imgNum!=1}}">
+    <block wx:if="{{imgNum!==4&&imgNum!==1}}">
         <view class="ImgBoxN">
-                <image class="img1" src="../../images/test.jpg"></image>
-                <image class="img1" src="../../images/test.jpg"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
         </view>
     </block>
-</view>
+

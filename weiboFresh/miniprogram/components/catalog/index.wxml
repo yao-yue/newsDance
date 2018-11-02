@@ -1,7 +1,7 @@
-<view class="{{open?'catalog-main':''}}" catch:tap="closeCatalog">
+<view class="{{open?'catalog-main':'catalog-hidden'}}" catch:tap="closeCatalog">
     <view class="catalog-main-left"></view>
     <view class="catalog-main-right">
-        <view class="{{open?'catalog-main-title':''}}">
+        <view class="catalog-main-title">
             <text class="1">主标题</text>
         </view>
         <view class="catalog-main-subTitle">

@@ -6,7 +6,7 @@ Component({
   properties: {
     imgNum: {
       type: Number,
-      value: 4
+      value: 9
     }
   },
 

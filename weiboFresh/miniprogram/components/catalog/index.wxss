@@ -7,6 +7,9 @@ page .catalog-main{
     display: flex;
     z-index: 99;
 }
+.catalog-hidden {
+    display: none;
+}
 
 .catalog-main .catalog-main-left {
     height: 100%;

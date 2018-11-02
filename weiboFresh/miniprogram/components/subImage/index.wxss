@@ -1,26 +1,43 @@
-.subImage-wrapper {
+
+.ImgBox_one{
     box-sizing: border-box;
+    padding-top: 10rpx;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: pink; */
 }
-.subImage-wrapper .Imgbox1{
-    width: 670rpx;
-    height: 488rpx;
-    background-color: green;
-    border-radius: 10rpx;   
+.ImgBox_one  .imgOne {
+    height: 480rpx;
+    width: 670rpx; 
+    border-radius: 16rpx; 
 }
-.subImage-wrapper .Imgbox4{
-    width: 396rpx;
+.ImgBox_four{
     height: 396rpx;
-    border-radius: 6rpx;
-    background-color: green;
+    width: 396rpx;
+    /* border-radius: 6rpx; */
     display: grid;
-    grid-gap: 12rpx; 
-    align-content: start;
+    grid-template-rows:  repeat(2, 192rpx);
+    grid-template-columns: repeat(2, 192rpx);
+    grid-gap: 12rpx 12rpx;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    overflow: hidden;
 }
-.subImage-wrapper .ImgboxN{
-    border-radius: 6rpx;
-    background-color: green;
-    display: grid;
-    grid-gap: 12rpx; 
-    align-content: start;
+.ImgBox_four > image {
+    box-sizing: border-box;
+    height: 192rpx;
+    width: 192rpx;
+}
+.ImgBoxN {
+    margin-right: 18rpx;
+    padding: 2rpx;
+    border-radius: 30rpx;
+    overflow: hidden;
+}
+.ImgBoxN > image {
+    float: left;
+    width: 208rpx;
+    height: 208rpx;
+    margin: 5.5rpx;
 }
 
