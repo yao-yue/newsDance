@@ -1,7 +1,8 @@
 
     <block wx:if="{{imgNum===1}}">
-        <view class="ImgBox_one">
-            <image class="imgOne"  src="../../images/test.jpg" mode="aspectFill"></image>
+        <view class="ImgBox_one" >
+            <image class="imgOne"  src="../../images/test.jpg" mode="aspectFill" 
+            bind:tap="openImageDo" data-hi="{{imageDoIsOpen}}"></image>
         </view>
     </block>
     <block wx:if="{{imgNum===4}}">
@@ -25,4 +26,5 @@
             <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
         </view>
     </block>
+<imageDo isOpen="{{imageDoIsOpen}}"></imageDo>
 

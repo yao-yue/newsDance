@@ -11,7 +11,7 @@
             <image class="inner-header-right-img"></image>
         </view>
     </view>
-    <tabbar isInner="true"></tabbar>
-    <subNews class="1"></subNews>
-    <catalog ></catalog>
 </view>
+    <subNews class="1"></subNews>
+    <tabbar isInner="true"></tabbar>
+    <catalog ></catalog>

@@ -1,5 +1,6 @@
 
 .ImgBox_one{
+    z-index: 9;
     box-sizing: border-box;
     padding-top: 10rpx;
     margin: 0;
@@ -24,6 +25,7 @@
     overflow: hidden;
 }
 .ImgBox_four > image {
+    z-index: 9;
     box-sizing: border-box;
     height: 192rpx;
     width: 192rpx;
@@ -35,6 +37,7 @@
     overflow: hidden;
 }
 .ImgBoxN > image {
+    z-index: 9;
     float: left;
     width: 208rpx;
     height: 208rpx;

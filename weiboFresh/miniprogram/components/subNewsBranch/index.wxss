@@ -32,6 +32,9 @@
     width: 100%;
     z-index: 9;
 }
+.subNews-branch .imgBox {
+    z-index: 99;
+}
 .subNews-branch-content .canOpenText {
     display: inline-block;
     margin-top: -52rpx;

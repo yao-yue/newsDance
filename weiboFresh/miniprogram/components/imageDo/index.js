@@ -1,12 +1,12 @@
-// components/subImage/subImage.js
+// components/imageDo/index.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    imgNum: {
-      type: Number,
-      value: 1
+    isOpen: {
+      type: Boolean,
+      value: false
     }
   },
 
@@ -14,17 +14,18 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imageDoIsOpen: false
+
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    openImageDo: function () {
-      let imageDoIsOpen = !imageDoIsOpen
+    closeImagePage: function (e) {
+      let isOpen = this.data.isOpen
+      let _isOpen = !isOpen
       this.setData({
-        imageDoIsOpen 
+        isOpen: _isOpen
       })
     }
   }
