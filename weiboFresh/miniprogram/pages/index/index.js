@@ -4,13 +4,8 @@ Page({
   data: {
     mainNewsList: []
   },
-  goInner: () => {
-    wx.navigateTo({
-      url: '/pages/inner/inner'
-    })
-  },
+
   onLoad: function () {
-    wx.cloud.init();
     wx.cloud.callFunction({
       name: 'mainNewsGet',
       data: {
@@ -18,13 +13,11 @@ Page({
       }
     }).then(res => {
       this.setData({
-        mainNewsList: res.result.data
+        mainNewsList: res.result
       })
+      console.log(this.data.mainNewsList)
     }).catch(err => {
       console.log(err)
     })
   },
-  http: function() {
-    console.log(this.data.mainNewsList);
-  }
 })

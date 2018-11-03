@@ -23,7 +23,15 @@ Component({
     imgUrl: {
       type: String,
       value: null
-    }
+    },
+    subNews: {
+      type: Array,
+      value: null
+    },
+    name: {
+      type: String,
+      value: null
+    },
   },
 
   /**
@@ -37,9 +45,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goInner: () => {
+    // 这里用箭头函数会让this达不到取数据的效果所以还是用function
+    goInner: function() {
       wx.navigateTo({
-        url: '../../pages/inner/inner'
+        // 这里avatar转译时老是出错
+        url: '../../pages/inner/inner?dataPack='+ JSON.stringify(this.properties)
       })
     },
     openShare: function () {

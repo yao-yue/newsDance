@@ -16,6 +16,14 @@ exports.main = async () => {
       if (user.data.length > 0) {
         mainNew.setMan = user.data[0]
       }
+      for (let i = 0; i < mainNew.subNews.length; i++) {
+        const subNews = await db.collection("fresh-subNews").where({
+          _id: mainNew.subNews[i]
+        }).get();
+        if (subNews.data.length > 0) {
+          mainNew.subNews[i] = subNews.data[0]
+        }
+      }     
       mainNewsList.push(mainNew);
     }
     return mainNewsList;

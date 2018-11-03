@@ -1,9 +1,15 @@
+
 <block wx:for="{{mainNewsList}}" wx:for-item="newsItem" wx:key="index">
     <block wx:if="{{newsItem.isShow}}">
-    <newsBox isOld="{{newsItem.isOld}}" title="{{newsItem.title}}"
-    focusNum="{{newsItem.focusNum}}" time="{{newsItem.time}}" imgUrl="{{newsItem.image}}"></newsBox>
+        <newsBox isOld="{{newsItem.isOld}}" 
+                title="{{newsItem.title}}" 
+                focusNum="{{newsItem.focusNum}}" 
+                time="{{newsItem.time}}" 
+                imgUrl="{{newsItem.image}}"
+                subNews="{{newsItem.subNews}}"
+                name="{{newsItem.setMan.nickname}}">
+        </newsBox>
     </block>
 </block>
-<button bind:tap="http">clickMe!</button>
 
 <tabbar isIndex="true"></tabbar>
