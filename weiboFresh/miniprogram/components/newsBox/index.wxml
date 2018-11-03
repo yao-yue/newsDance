@@ -2,17 +2,17 @@
 <view class="news-wrapper" >
     <view class="news-wrapper-up" bind:tap="goInner">
         <view class="news-title">
-        <text>愿你在话筒环绕中安睡,主持人李咏因病去世！</text>
+        <text>{{title}}</text>
     </view>
     <view class="news-tag">
-            <text decode="true">更新时间:&emsp;</text>
-            <text>time</text>
+            <text decode="true">{{isOld?'更新':'创建'}}时间: </text>
+            <text>{{time}}</text>
             <view class="news-tag-focus">
             <icon class="wode" type="wode" size="28" color="#b1b1b1"></icon>
-            <span class="focus_num">关注数</span>
+            <span class="focus_num">{{focusNum}}</span>
             </view>        
     </view>
-    <image class="img" mode="aspectFill"></image>
+    <image class="img" mode="aspectFill" src="{{imgUrl}}"></image>
     </view>
     <view class="news-share" bindtap="openShare" >
         <icon class="fenxiang" type="fenxiang" color="#f7ca4b" size="30"></icon>

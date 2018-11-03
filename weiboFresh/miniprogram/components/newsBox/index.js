@@ -4,7 +4,26 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    title: {
+      type: String,
+      value: null
+    },
+    isOld: {
+      type: Boolean,
+      value: false
+    },
+    time: {
+      type: String,
+      value: null
+    },
+    focusNum: {
+      type: Number,
+      value: null
+    },
+    imgUrl: {
+      type: String,
+      value: null
+    }
   },
 
   /**
