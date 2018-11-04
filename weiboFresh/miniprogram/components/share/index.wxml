@@ -1,8 +1,8 @@
 <view class="{{show?'share-wrapper':'share-hidden'}}" bind:tap="closeShare">
     <view class="share-content">
-        <image class="newsMainImg"></image>
-        <text class="newsMainTitle" decode="{{true}}">解密唐嫣罗晋婚礼:&ensp;森林中的精灵十大撒旦就等哈就可获得</text>
-        <text class="focusNum">8人关注</text>
+        <image class="newsMainImg" src="{{mainImg}}" mode="aspectFill"></image>
+        <text class="newsMainTitle" decode="{{true}}">{{mainTitle}}</text>
+        <text class="focusNum">{{mainFocus}}人关注</text>
         <image class="miniAppImg" src="../../images/HappyBirdwe.jpg"></image>
             <text class="share-content-handle">长按二维码查看这只绿鸟</text>
             <text class="share-content-intro">转发这只绿鸟，今年会给你带来好运，万BUG不侵~~</text>
@@ -17,8 +17,11 @@
                 <text class="1">保存到相册</text>
             </view>
             <view class="shareBar-right">
+            <button open-type="share">
                 <icon type="zhuanfa" size="42" color="#000000"></icon>
                 <text class="1">转发给好友</text>
+            </button>
+                
             </view>
         </view>
     </view>

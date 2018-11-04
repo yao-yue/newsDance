@@ -28,7 +28,7 @@
         </view>
 </view>
 </block>
-<share show="{{shareIsOpen}}"></share>
+<share show="{{shareIsOpen}}" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}" mainFocus="{{mainFocus}}"></share>
 
 
 

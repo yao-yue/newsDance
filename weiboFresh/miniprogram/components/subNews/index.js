@@ -15,6 +15,10 @@ Component({
     mainImg: {
       type: String,
       value: ''
+    },
+    mainFocus: {
+      type: Number,
+      value: null
     }
     
   },
@@ -23,17 +27,11 @@ Component({
    * 组件的初始数据
    */
   data: {
-    detailNews:[]
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    a: function(e) {
-      this.setData({
-        detailNews: e.currentTarget.dataset.hi
-      })
-    }
   }
 })

@@ -9,6 +9,18 @@ Component({
       type: Boolean,
       value: false,
     },
+    mainTitle: {
+      type: String,
+      value: ''
+    },
+    mainImg: {
+      type: String,
+      value: ''
+    },
+    mainFocus: {
+      type: Number,
+      value: null,
+    }
   },
   data: {
     // 这里是一些组件内部数据

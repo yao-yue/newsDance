@@ -7,6 +7,18 @@ Component({
     show: {
       type: Boolean,
       value: false
+    },
+    mainTitle: {
+      type: String,
+      value: ''
+    },
+    mainImg: {
+      type: String,
+      value: ''
+    },
+    mainFocus: {
+      type: Number,
+      value: null,
     }
   },
 
@@ -29,6 +41,7 @@ Component({
       this.setData({
         show : _show
       })
-    }
+    },
+    onShareAppMessage(Object)
   }
 })

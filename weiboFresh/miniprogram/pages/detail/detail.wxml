@@ -1,4 +1,4 @@
-<tabbar isInner="true"></tabbar>
+<tabbar isInner="true" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}" mainFocus="{{mainFocus}}"></tabbar>
 <view class="detail-main">
     <view class="detail-main-header">
         <image class="header-img" mode="aspectFill" src="{{mainImg}}"></image>

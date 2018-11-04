@@ -30,7 +30,7 @@ page .share-wrapper {
     height: 125rpx;
     width: 125rpx;
     border-radius: 30rpx;
-    background-color: yellow;
+    background-color: #eeeeee;
 }
 .share-content .newsMainTitle {
     display: block;
@@ -38,6 +38,7 @@ page .share-wrapper {
     line-height: 70rpx;
     font-weight: 600rpx;
     font-size: 34rpx;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

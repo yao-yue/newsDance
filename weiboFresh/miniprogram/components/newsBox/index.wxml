@@ -1,4 +1,4 @@
-<share show="{{shareIsOpen}}"></share>
+<share show="{{shareIsOpen}}" mainTitle="{{title}}" mainImg="{{imgUrl}}" mainFocus="{{focusNum}}"></share>
 <view class="news-wrapper" >
     <view class="news-wrapper-up" bind:tap="goInner">
         <view class="news-title">

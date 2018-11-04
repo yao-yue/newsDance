@@ -3,6 +3,6 @@
      <view class="subNews-subTitle" >
         <text >{{subNewsItem.title}}</text>
     </view> 
-    <subNewsBranch detailNews="{{subNewsItem.detailNews}}" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}"></subNewsBranch>
+    <subNewsBranch detailNews="{{subNewsItem.detailNews}}" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}" mainFoucs="{{mainFocus}}"></subNewsBranch>
 </view>
 </blcok>

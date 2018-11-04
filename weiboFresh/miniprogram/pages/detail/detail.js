@@ -11,7 +11,8 @@ Page({
     comments: [],
     fromMan: [],
     mainImg: '',
-    mainTitle: ''
+    mainTitle: '',
+    mainFocus:''
   },
 
   /**
@@ -28,6 +29,7 @@ Page({
     let fromMan = dataPack.fromMan
     let mainTitle = options.mainTitle
     let mainImg = options.mainImg
+    let mainFocus = options.mainFocus
     
     wx.cloud.callFunction({
       name: 'commentsGet',
@@ -43,7 +45,8 @@ Page({
         imgPack,
         fromMan,
         mainImg,
-        mainTitle
+        mainTitle,
+        mainFocus
       })
     }).catch(err => {
       console.log(err)

@@ -1,5 +1,5 @@
 
-<share show="{{shareIsOpen}}"></share>
+<share show="{{shareIsOpen}}" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}" mainFocus="{{mainFocus}}"></share>
 <view class="weibo-tabbar" >
     <view class="item-left"  bindtap="goHome" data-hi="{{isIndex}}" data-in="{{isInner}}">
             <icon type="shouye" color="{{isIndex?'#000000':'#b1b1b1'}}" size="45"/>

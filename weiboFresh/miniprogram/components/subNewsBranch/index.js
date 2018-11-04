@@ -15,6 +15,10 @@ Component({
     mainImg: {
       type: String,
       value: ''
+    },
+    mainFocus: {
+      type: Number,
+      value: null
     }
   },
   /**
@@ -39,7 +43,8 @@ Component({
     goDetail: function(e) {
       wx.navigateTo({
         url: '/pages/detail/detail?dataPack='+ JSON.stringify(e.currentTarget.dataset.hi)
-        +'&mainTitle='+this.properties.mainTitle + '&mainImg='+this.properties.mainImg
+        +'&mainTitle='+this.properties.mainTitle + '&mainImg='+this.properties.mainImg 
+        +'&mainFocus='+this.properties.mainFocus
       })
     }
   }
