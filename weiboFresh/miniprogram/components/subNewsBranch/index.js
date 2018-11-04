@@ -6,7 +6,15 @@ Component({
   properties: {
     detailNews: {
       type: Array,
-      value: 1
+      value: []
+    },
+    mainTitle: {
+      type: String,
+      value: ''
+    },
+    mainImg: {
+      type: String,
+      value: ''
     }
   },
   /**
@@ -31,6 +39,7 @@ Component({
     goDetail: function(e) {
       wx.navigateTo({
         url: '/pages/detail/detail?dataPack='+ JSON.stringify(e.currentTarget.dataset.hi)
+        +'&mainTitle='+this.properties.mainTitle + '&mainImg='+this.properties.mainImg
       })
     }
   }

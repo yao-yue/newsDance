@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "comment": "../../components/comment/index",
-        "tabbar": "../../components/tabbar/index"
+        "tabbar": "../../components/tabbar/index",
+        "subImage": "../../components/subImage/index"
     }
 }

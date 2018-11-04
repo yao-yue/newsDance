@@ -13,7 +13,7 @@
     width: 80rpx;
     height: 80rpx;
     border-radius: 16rpx;
-    background-color: green;
+    background-color: #e8e8e8;
     margin-right: 18rpx;
 }
 .detail-main-header .header-right {
@@ -36,6 +36,11 @@
     font-size: 35rpx;
     line-height: 46rpx; 
 }
+.detail-main-content .subImg {
+    z-index: 9;
+    display: block;
+    margin-bottom: -20rpx;  
+}
 .detail-main-content .content-detial-top {
     display: inline-block;
     margin-top: -30rpx; 
@@ -50,7 +55,7 @@
     height: 44rpx;
     width: 44rpx;
     border-radius: 22rpx;
-    background-color: green;
+    background-color: #e8e8e8;
     margin-bottom: -10rpx;
     margin-left: 6rpx;
     margin-right: 6rpx;
@@ -77,4 +82,12 @@
     border-bottom: 1rpx solid rgba(177, 177, 177, 0.6);
     transform: scale(0.5);
     transform-origin: 0 0;
+}
+.detail-comment .noComment {
+    display: block;
+    height: 250rpx;
+    line-height: 250rpx;
+    font-size: 26rpx;
+    color: #b1b1b1;
+    text-align: center;
 }

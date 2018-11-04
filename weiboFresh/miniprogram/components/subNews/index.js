@@ -8,6 +8,14 @@ Component({
       type: Array,
       value: null
     },
+    mainTitle: {
+      type: String,
+      value: ''
+    },
+    mainImg: {
+      type: String,
+      value: ''
+    }
     
   },
 

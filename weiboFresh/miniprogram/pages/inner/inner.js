@@ -1,9 +1,9 @@
 Page({
   data: {
-    username: null,
-    focusNum: null,
-    topImg: null,
-    topTitle: null,
+    username: '',
+    focusNum: '',
+    topImg: '',
+    topTitle: '',
     subNews: [],
 
   },

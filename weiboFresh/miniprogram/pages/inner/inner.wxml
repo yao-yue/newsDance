@@ -12,6 +12,6 @@
         </view>
     </view>
 </view>
-    <subNews subNews="{{subNews}}"></subNews>
+    <subNews subNews="{{subNews}}" mainTitle="{{topTitle}}" mainImg="{{topImg}}"></subNews>
     <tabbar isInner="true"></tabbar>
     <catalog subNews="{{subNews}}"></catalog>

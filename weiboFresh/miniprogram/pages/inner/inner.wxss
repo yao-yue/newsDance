@@ -48,6 +48,6 @@ page {
 .inner-header_right .inner-header-right-img {
     width: 200rpx;
     height: 200rpx;
-    background-color: yellow;
+    background-color: #eeeeee;
     border-radius: 15rpx;
 }

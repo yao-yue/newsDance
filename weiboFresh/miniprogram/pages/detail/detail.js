@@ -5,10 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    content: null,
-    top_time: null,
+    content: '',
+    topTime: '',
     imgPack: [],
-
+    comments: [],
+    fromMan: [],
+    mainImg: '',
+    mainTitle: ''
   },
 
   /**
@@ -19,9 +22,12 @@ Page({
     console.log(JSON.parse(options.dataPack))
     let dataPack = JSON.parse(options.dataPack)
     let content = dataPack.content
-    let top_time = dataPack.time
+    let topTime = dataPack.time
     let imgPack = dataPack.image
     let detailId = dataPack._id
+    let fromMan = dataPack.fromMan
+    let mainTitle = options.mainTitle
+    let mainImg = options.mainImg
     
     wx.cloud.callFunction({
       name: 'commentsGet',
@@ -30,6 +36,15 @@ Page({
       }
     }).then(res => {
       console.log(res)
+      this.setData({
+        comments: res.result,
+        content,
+        topTime,
+        imgPack,
+        fromMan,
+        mainImg,
+        mainTitle
+      })
     }).catch(err => {
       console.log(err)
     })

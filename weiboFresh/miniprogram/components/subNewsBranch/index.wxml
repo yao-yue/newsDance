@@ -21,7 +21,7 @@
         <view class="subNews-branch-bottom" >
             <icon class="dianzan" type="dianzan" color="#cdcccc" size="34"></icon>
             <text class="dianzanNum">{{newsItem.likeNum}}</text>
-            <icon class="pinglun" type="message" color="#cdcccc" size="32"></icon>
+            <icon class="pinglun" type="message" color="#cdcccc" size="26"></icon>
             <text class="pinglunNum">{{newsItem.commentNum}}</text>
             <icon class="fenxiang" type="fenxiang" color="#cdcccc" size="28"
             bind:tap="openShare" data-hi="{{shareIsOpen}}"></icon>

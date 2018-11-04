@@ -1,18 +1,23 @@
+<block wx:for="{{comments}}" wx:for-item="item" wx:key="index">
+
 <view class="comment-wrapper">
     <view class="comment-info">
-        <image class="comment-info-avatar"></image>
+        <image class="comment-info-avatar" src="{{item.fromMan.avatar}}" mode="aspectFill"></image>
         <view class="comment-info-center">
-            <text class="comment-info-username">提莫大魔王</text>
-            <text class="comment-info-time">42分钟前</text>
+            <text class="comment-info-username">{{item.fromMan.nickname}}</text>
+            <text class="comment-info-time">{{item.time}}</text>
         </view>
         <view class="comment-info-right">
-            <text class="dianzanNum">9</text>
+            <text class="dianzanNum">{{item.likeNum}}</text>
             <icon type="dianzan" size="26" color="#cdcccc"></icon>
         </view>
     </view>
     <view class="comment-content">
-        <text class="comment-content-main">从十九大看了计算机快乐十分哈克龙飞洒看了你萨克的斯科拉垃圾撒分开</text>
-        <view class="comment-content-response">
+        <text class="comment-content-main">{{item.content}}</text>
+
+        <block wx:if="{{item.response}}">
+
+            <view class="comment-content-response">
             <view class="response-box">
                 <view>
                     <text class="response1" decode="{{true}}">用户名111:&ensp;</text>
@@ -25,5 +30,10 @@
                 <text class="responseNum" bind:tap="goCommentDetail">共11条回复 ></text>
             </view>
         </view>
+
+        </block>
+        
     </view>
 </view>
+
+</block>
