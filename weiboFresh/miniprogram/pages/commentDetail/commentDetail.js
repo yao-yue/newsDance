@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    response: [],
+    comment: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options.dataPack)
+    console.log(JSON.parse(options.dataPack))
+    let dataPack = JSON.parse(options.dataPack)
+    this.setData({
+      response: dataPack.response,
+      comment: dataPack
+    })
 
+    console.log(this.data.comment)
+    
   },
 
   /**

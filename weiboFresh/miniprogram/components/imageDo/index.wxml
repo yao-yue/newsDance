@@ -1,7 +1,8 @@
 <view class="{{isOpen?'imagePage-wrapper':'imagePageHidden'}}" bind:tap="closeImagePage">
-    <view class="indexOfImg">
-        <text class="1">1/9</text>
-    </view>
-    <image class="imageDo"></image>
+    <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:for-index="idx" wx:key="index">
+        <view class="indexOfImg">
+            <text class="1">{{idx}}/{{imagePack.length}}</text>
+        </view>
+        <image class="imageDo" src="{{imgItem}}"></image>
+    </block>
 </view>
-

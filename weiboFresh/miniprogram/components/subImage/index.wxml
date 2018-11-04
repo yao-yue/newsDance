@@ -8,16 +8,16 @@
     <block wx:if="{{imagePack.length===4}}">
         <view class="ImgBox_four">
             <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
-                <image class="img4" src="{{imgItem}}" mode="aspectFill"></image>
+                <image class="img4" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo"></image>
             </block>
         </view>
     </block>
     <block wx:if="{{imagePack.length!==4 && imagePack.length!==1}}">
         <view class="ImgBoxN">
             <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
-                <image class="imgN" src="{{imgItem}}" mode="aspectFill"></image>
+                <image class="imgN" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo"></image>
             </block>
         </view>
     </block>
-<imageDo isOpen="{{imageDoIsOpen}}"></imageDo>
+<imageDo isOpen="{{imageDoIsOpen}}" imagePack="{{imagePack}}"></imageDo>
 

@@ -41,7 +41,6 @@ Component({
       this.setData({
         show : _show
       })
-    },
-    onShareAppMessage(Object)
+    }
   }
 })

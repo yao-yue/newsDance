@@ -6,7 +6,7 @@ Component({
   properties: {
     comments: {
       type: Array,
-      
+      value: []
     }
   },
 
@@ -21,9 +21,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goCommentDetail: function() {
+    goCommentDetail: function(e) {
       wx.navigateTo({
-        url: '/pages/commentDetail/commentDetail'
+        url: '/pages/commentDetail/commentDetail?dataPack='+ JSON.stringify(e.currentTarget.dataset.hi)
       })
     }
   }

@@ -13,21 +13,24 @@
         </view>
     </view>
     <view class="comment-content">
-        <text class="comment-content-main">{{item.content}}</text>
+        <view >
+            <text class="comment-content-main">{{item.content}}</text>
+        </view>
+        
 
-        <block wx:if="{{item.response}}">
+        <block wx:if="{{item.response.length>0&&comments.length>1}}">
 
             <view class="comment-content-response">
             <view class="response-box">
-                <view>
-                    <text class="response1" decode="{{true}}">用户名111:&ensp;</text>
-                    <text>评论体超级无敌蛇皮怪怪皮皮皮牛逼卢本伟啥都好说绿卡江口街道</text>
-                </view>
-                <view>
-                    <text class="response2" decode="{{true}}">用户名111:&ensp;</text>
-                    <text>评论体</text>
-                </view>
-                <text class="responseNum" bind:tap="goCommentDetail">共11条回复 ></text>
+                <block wx:for="{{item.response}}" wx:for-item="responseItem" wx:key="index">
+                    <block wx:if="{{index<=1}}">
+                    <view>
+                        <text class="blue" decode="{{true}}">{{responseItem.fromMan.nickname}}:&ensp;</text>
+                        <text>{{responseItem.content}}</text>
+                    </view>
+                    </block>
+                </block>
+                <text class="responseNum" bind:tap="goCommentDetail" data-hi="{{item}}">共{{item.response.length}}条回复 ></text>
             </view>
         </view>
 

@@ -1,20 +1,28 @@
-<comment class="1"></comment>
+<comment comments="{{[comment]}}"></comment>
+
 <view class="comment-sub-wrapper">
-    <view class="comment-sub">
+
+    <block wx:for="{{response}}" wx:for-item="responseItem" wx:key="index">
+        <view class="comment-sub">
         <view class="comment-sub-info">
-            <image class="comment-sub-info-avatar"></image>
+            <image class="comment-sub-info-avatar" src="{{responseItem.fromMan.avatar}}" mode="aspectFill"></image>
             <view class="comment-sub-info-center">
-                <text class="comment-sub-info-username">提莫大魔王</text>
-                <text class="comment-sub-info-time">42分钟前</text>
+                <text class="comment-sub-info-username">{{responseItem.fromMan.nickname}}</text>
+                <text class="comment-sub-info-time">{{responseItem.time}}</text>
             </view>
             <view class="comment-sub-info-right">
-                <text class="dianzanNum-sub">9</text>
+                <text class="dianzanNum-sub">{{responseItem.likeNum}}</text>
                 <icon type="dianzan" size="26" color="#cdcccc"></icon>
             </view>
         </view>
         <view class="comment-sub-content">
-            <text >回复@罗花同学:</text>
-            <text >没有什么能阻挡斯卡迪就开始拉家带口萨达撒较好的杀寇决</text>
+            <block wx:if="index==1">
+                <text >回复@{{comment.fromMan.nickname}}:</text>
+            </block>
+            
+            <text >{{responseItem.content}}</text>
         </view>
     </view>
+    </block>
+    
 </view>

@@ -7,6 +7,10 @@ Component({
     isOpen: {
       type: Boolean,
       value: false
+    },
+    imagePack: {
+      type: Array,
+      value: []
     }
   },
 
