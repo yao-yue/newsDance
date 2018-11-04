@@ -4,8 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    detailNews: {
+      type: Array,
+      value: 1
+    }
   },
-
   /**
    * 组件的初始数据
    */
@@ -25,9 +28,9 @@ Component({
         isFolded
     })
     },
-    goDetail: function() {
+    goDetail: function(e) {
       wx.navigateTo({
-        url: '/pages/detail/detail'
+        url: '/pages/detail/detail?dataPack='+ JSON.stringify(e.currentTarget.dataset.hi)
       })
     }
   }

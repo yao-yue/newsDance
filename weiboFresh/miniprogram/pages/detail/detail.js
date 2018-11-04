@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    content: null,
+    top_time: null,
+    imgPack: [],
 
   },
 
@@ -12,7 +15,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.dataPack)
+    console.log(JSON.parse(options.dataPack))
+    let dataPack = JSON.parse(options.dataPack)
+    let content = dataPack.content
+    let top_time = dataPack.time
+    let imgPack = dataPack.image
+    let detailId = dataPack._id
+    
+    wx.cloud.callFunction({
+      name: 'commentsGet',
+      data: {
+        a: detailId
+      }
+    }).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
   },
 
   /**

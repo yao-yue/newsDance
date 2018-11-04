@@ -48,7 +48,7 @@ Component({
     // 这里用箭头函数会让this达不到取数据的效果所以还是用function
     goInner: function() {
       wx.navigateTo({
-        // 这里avatar转译时老是出错
+        // 这里avatar转译时老是出错--->找出原因了 主要是因为那张图的URL太长了 换了一张图好了
         url: '../../pages/inner/inner?dataPack='+ JSON.stringify(this.properties)
       })
     },

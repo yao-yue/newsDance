@@ -1,31 +1,36 @@
+<block wx:for="{{detailNews}}" wx:for-item="newsItem" wx:key="index">
 <view class="subNews-branch" >
-        <view class="subNews-branch-time" bindtap="goDetail">
-            <text>4小时前</text>
+            <view class="subNews-branch-time" bindtap="goDetail" data-hi="{{newsItem}}">
+            <text>{{newsItem.time}}</text>
         </view>
         <view class="subNews-branch-content" >
-            <text class="canOpenText {{isFolded?'show':'hide'}}" bindtap="goDetail">
-                【按实际还得靠拉双离合放假就房间大少尽快发货就砍胡
-                椒粉和极大恢复健康蝴蝶结卡复活级大佬好烦尽快的哈
-                氪金负的哈数据库和放大混分巨兽凤凰军事电话费is的地方是非得失
-                的开发商可令肌肤开始懂了荆防颗粒时点击了
-                疯狂倒计时离开房间开了圣诞节付款了倒计时了镜看】
+            <text class="canOpenText {{isFolded?'show':'hide'}}" bindtap="goDetail" data-hi="{{newsItem}}">
+                {{newsItem.content}}
             </text>
-            <view bindtap="toggleText" class="openTap" >{{isFolded?'收起':'全文'}}</view>
+            <block wx:if="{{newsItem.content.length>=170}}">
+                <view bindtap="toggleText" class="openTap" >{{isFolded?'收起':'全文'}}</view>
+            </block>
         </view>
-            <subImage class="imgBox"></subImage>
-        <view class="subNews-branch-from" bindtap="goDetail">
+            <subImage class="imgBox" imagePack="{{newsItem.image}}"></subImage>
+        <view class="subNews-branch-from" bindtap="goDetail" data-hi="{{newsItem}}">
             <text>来自</text>
-            <image class="formManImg"></image>
-            <text class="subNews-branch-fromName">无敌少年飞天怪！</text>
+            <image class="formManImg" src="{{newsItem.fromMan.avatar}}" mode="aspectFill"></image>
+            <text class="subNews-branch-fromName">{{newsItem.fromMan.nickname}}</text>
         </view>
                
         <view class="subNews-branch-bottom" >
             <icon class="dianzan" type="dianzan" color="#cdcccc" size="34"></icon>
-            <text class="dianzanNum">1870</text>
+            <text class="dianzanNum">{{newsItem.likeNum}}</text>
             <icon class="pinglun" type="message" color="#cdcccc" size="32"></icon>
-            <text class="pinglunNum">673</text>
+            <text class="pinglunNum">{{newsItem.commentNum}}</text>
             <icon class="fenxiang" type="fenxiang" color="#cdcccc" size="28"
             bind:tap="openShare" data-hi="{{shareIsOpen}}"></icon>
         </view>
 </view>
+</block>
 <share show="{{shareIsOpen}}"></share>
+
+
+
+
+   

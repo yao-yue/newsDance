@@ -17,16 +17,17 @@ exports.main = async (event, context) => {
             if(detailNews.data.length > 0) {
                 subNew.detailNews[i] = detailNews.data[0]
             }
-            for(let i = 0; i < detailNews.length; i++){
-                const user_id = detailNews[i].fromMan;
+        }
+            for(let i = 0; i < subNew.detailNews.length; i++){
+                const user_id = subNew.detailNews[i].fromMan;
                 const user = await db.collection('fresh-users').where({
                     _id: user_id
                 }).get();
                 if(user.data.length > 0) {
-                    detailNews[i].fromMan = user.data[0]
+                    subNew.detailNews[i].fromMan = user.data[0]
                 }
             }
-        }
+        
         subNewsList.push(subNew)
     }    
     return subNewsList;

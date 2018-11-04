@@ -2,16 +2,16 @@
     <view class="inner-header">
         <view class="inner-header_left">
             <view class="inner-header-mian-title">
-                <span>解密唐嫣罗晋婚礼: 森林中的精灵一二三四五六七八九十</span>
+                <span>{{topTitle}}</span>
             </view>
-            <text class="inner-header-fundMan" decode="{{true}}">创建者:&ensp;微博婚礼</text>
-            <text class="inner-header-focusNum">7人关注</text>
+            <text class="inner-header-fundMan" decode="{{true}}">创建者:&ensp;{{username}}</text>
+            <text class="inner-header-focusNum">{{focusNum}}人关注</text>
         </view>
         <view class="inner-header_right">
-            <image class="inner-header-right-img"></image>
+            <image class="inner-header-right-img" src="{{topImg}}" mode="aspectFill"></image>
         </view>
     </view>
 </view>
-    <subNews class="1"></subNews>
+    <subNews subNews="{{subNews}}"></subNews>
     <tabbar isInner="true"></tabbar>
-    <catalog ></catalog>
+    <catalog subNews="{{subNews}}"></catalog>

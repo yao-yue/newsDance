@@ -2,12 +2,15 @@
     <view class="catalog-main-left"></view>
     <view class="catalog-main-right">
         <view class="catalog-main-title">
-            <text class="1">主标题</text>
+            <text class="1">目录</text>
         </view>
         <view class="catalog-main-subTitle">
-                <view class="subTitle-item" >
-                    <text>副标题</text>
+        <block wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:key="index">
+            <view class="subTitle-item" >
+                    <text>{{subNewsItem.title}}</text>
                 </view>
+        </block>
+                
         </view>
     </view>
 </view>

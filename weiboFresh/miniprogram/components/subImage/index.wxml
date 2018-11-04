@@ -1,29 +1,22 @@
 
-    <block wx:if="{{imgNum===1}}">
+    <block wx:if="{{imagePack.length===1}}">
         <view class="ImgBox_one" >
-            <image class="imgOne"  src="../../images/test.jpg" mode="aspectFill" 
+            <image class="imgOne"  src="{{imagePack[0]}}" mode="aspectFill" 
             bind:tap="openImageDo" data-hi="{{imageDoIsOpen}}"></image>
         </view>
     </block>
-    <block wx:if="{{imgNum===4}}">
+    <block wx:if="{{imagePack.length===4}}">
         <view class="ImgBox_four">
-            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="img4" src="../../images/test.jpg" mode="aspectFill"></image>
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
+                <image class="img4" src="{{imgItem}}" mode="aspectFill"></image>
+            </block>
         </view>
     </block>
-    <block wx:if="{{imgNum!==4&&imgNum!==1}}">
+    <block wx:if="{{imagePack.length!==4 && imagePack.length!==1}}">
         <view class="ImgBoxN">
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
-            <image class="imgN" src="../../images/test.jpg" mode="aspectFill"></image>
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
+                <image class="imgN" src="{{imgItem}}" mode="aspectFill"></image>
+            </block>
         </view>
     </block>
 <imageDo isOpen="{{imageDoIsOpen}}"></imageDo>

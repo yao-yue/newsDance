@@ -1,6 +1,8 @@
+<blcok wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:for-index="idx" wx:key="index">
 <view class="subNews-wrapper">
-    <view class="subNews-subTitle" >
-        <text >婚礼策划</text>
-    </view>
-    <subNewsBranch class="bukeng"></subNewsBranch>
+     <view class="subNews-subTitle" >
+        <text >{{subNewsItem.title}}</text>
+    </view> 
+    <subNewsBranch detailNews="{{subNewsItem.detailNews}}"></subNewsBranch>
 </view>
+</blcok>
