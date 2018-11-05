@@ -1,23 +1,46 @@
-
+<!-- 自定义组件的方法 imageDo 点击图片后在组件中打开  有兴趣可以展开尝试一下 已实现了部分功能
     <block wx:if="{{imagePack.length===1}}">
         <view class="ImgBox_one" >
             <image class="imgOne"  src="{{imagePack[0]}}" mode="aspectFill" 
-            bind:tap="openImageDo" data-hi="{{imageDoIsOpen}}"></image>
+            bind:tap="openImageDo" data-hi="{{imageDoIsOpen}}" data-id="0"></image>
         </view>
     </block>
     <block wx:if="{{imagePack.length===4}}">
         <view class="ImgBox_four">
-            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
-                <image class="img4" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo"></image>
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:for-index="imgIndex"  wx:key="index">
+                <image class="img4" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo" data-id="{{imgIndex}}"></image>
             </block>
         </view>
     </block>
     <block wx:if="{{imagePack.length!==4 && imagePack.length!==1}}">
         <view class="ImgBoxN">
-            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index">
-                <image class="imgN" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo"></image>
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index" wx:for-index="imgIndex" >
+                <image class="imgN" src="{{imgItem}}" mode="aspectFill" bind:tap="openImageDo" data-id="{{imgIndex}}"></image>
+            </block>
+        </view>
+    </block> -->
+<!-- <imageDo isOpen="{{imageDoIsOpen}}" imagePack="{{imagePack}}" imageIndex="{{imageIndex}}"></imageDo> -->
+
+
+
+<!-- 官方API方法 -->
+  <block wx:if="{{imagePack.length===1}}">
+        <view class="ImgBox_one" >
+            <image class="imgOne"  src="{{imagePack[0]}}" mode="aspectFill" 
+            bind:tap="imgPreview" data-hi="{{imagePack[0]}}"></image>
+        </view>
+    </block>
+    <block wx:if="{{imagePack.length===4}}">
+        <view class="ImgBox_four">
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem"wx:key="index">
+                <image class="img4" src="{{imgItem}}" mode="aspectFill" bind:tap="imgPreview" data-hi="{{imgItem}}"></image>
             </block>
         </view>
     </block>
-<imageDo isOpen="{{imageDoIsOpen}}" imagePack="{{imagePack}}"></imageDo>
-
+    <block wx:if="{{imagePack.length!==4 && imagePack.length!==1}}">
+        <view class="ImgBoxN">
+            <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:key="index" >
+                <image class="imgN" src="{{imgItem}}" mode="aspectFill" bind:tap="imgPreview" data-hi="{{imgItem}}"></image>
+            </block>
+        </view>
+    </block>

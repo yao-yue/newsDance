@@ -12,6 +12,12 @@ Page({
       url: '/pages/exit/exit'
     })
   },
+  click: () => {
+    wx.previewImage({
+      current: 'https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg', // 当前显示图片的http链接
+      urls: ['https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg','https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg','https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg'] // 需要预览的图片http链接列表
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

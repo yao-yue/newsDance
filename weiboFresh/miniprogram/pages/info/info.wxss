@@ -16,7 +16,7 @@ page {
     align-items: center;
     box-sizing: border-box;
 }
-.info-wrapper .info-avatar-box {
+.info-wrapper .info-avatar {
     height: 180rpx;
     width: 180rpx;
     border-radius: 90rpx;

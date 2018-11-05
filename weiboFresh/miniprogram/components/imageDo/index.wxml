@@ -1,8 +1,44 @@
-<view class="{{isOpen?'imagePage-wrapper':'imagePageHidden'}}" bind:tap="closeImagePage">
-    <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:for-index="idx" wx:key="index">
-        <view class="indexOfImg">
-            <text class="1">{{idx}}/{{imagePack.length}}</text>
-        </view>
-        <image class="imageDo" src="{{imgItem}}"></image>
-    </block>
+<view class="{{isOpen?'imagePage-wrapper':'imagePageHidden'}}" bind:tap="closeImagePage" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <!-- <swiper circular="true">
+        <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:for-index="idx" wx:key="index">
+            <block wx:if="{{idx==imageIndex}}">
+                <view class="indexOfImg">
+                    <text class="1">{{idx+1}}/{{imagePack.length}}</text>
+                </view>
+                <swiper-item>
+                    <image class="imageDo" src="{{imgItem}}" mode="aspectFill"></image>
+                </swiper-item>  
+            </block>
+        </block>
+    </swiper> -->
+       <swiper   current="{{imageIndex}}" bindchange="swiperChange">
+      <block wx:for="{{imagePack}}" wx:for-item="imgItem" wx:for-index="{{imageIndex}}" wx:key="index">
+        <swiper-item>
+            
+            <view class="indexOfImg">
+                    <text class="1">{{imageIndex+1}}/{{imagePack.length}}</text>
+                </view>
+                    <image class="imageDo" src="{{imgItem}}" mode="aspectFill" bind:longpress="longPressImg"></image>
+                 
+            </swiper-item>  
+      </block>
+    </swiper>  
+   
 </view>
+<!-- 
+/**
+ * 
+ * 声明：
+ *    这个组件是为了实现点击一张图片后，可以显示页面并且长按能够下载
+ *    以及发送给朋友。
+ *    
+ *    但是后来发现了小程序官方文档里的一个API，推荐使用
+ *    链接：https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.previewImage.html
+ *    简介：
+ *    wx.previewImage(Object object)
+ *    在新页面中全屏预览图片。预览的过程中用户可以进行保存图片、发送给朋友等操作。
+ * 
+ * 
+ * 
+ */ -->

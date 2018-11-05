@@ -2,7 +2,7 @@
 <view class="setBox"><icon type="shezhi" color="#000000" size="34" bind:tap="goExit"/></view>
 <view class="info-wrapper">
     <view class="info-avatar-box">
-        <image class="info-avatar" src="../../images/test.jpg"></image>
+        <image class="info-avatar" src="../../images/test.jpg" mode="aspectFill" bindtap="click"></image>
     </view>
     <view class="info-username">
         <span>用户55641689415</span>
