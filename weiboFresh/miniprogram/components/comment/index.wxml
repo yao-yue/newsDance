@@ -13,7 +13,7 @@
         </view>
     </view>
     <view class="comment-content">
-        <view >
+        <view class="content-box">
             <text class="comment-content-main">{{item.content}}</text>
         </view>
         

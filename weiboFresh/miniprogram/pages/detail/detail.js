@@ -48,6 +48,7 @@ Page({
         mainTitle,
         mainFocus
       })
+      console.log(this.data.mainFocus)
     }).catch(err => {
       console.log(err)
     })

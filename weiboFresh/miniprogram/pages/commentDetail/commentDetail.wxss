@@ -1,3 +1,7 @@
+.top-box {
+    height: 160rpx;
+    overflow: hidden;
+}
 .comment-sub-wrapper {
     width: 100%;
     padding: 20rpx 50rpx 20rpx 40rpx;

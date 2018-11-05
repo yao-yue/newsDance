@@ -36,9 +36,6 @@ Component({
         })
       }
     },
-    goShare: () => {
-
-    },
     goInfo: (e) => {
         if(e.currentTarget.dataset.hi){
         wx.redirectTo({

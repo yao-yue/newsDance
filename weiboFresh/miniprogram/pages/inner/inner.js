@@ -30,6 +30,7 @@ Page({
         focusNum,
         username
       })
+      console.log(this.data.focusNum)
     }).catch(err => {
       console.log(err)
     })

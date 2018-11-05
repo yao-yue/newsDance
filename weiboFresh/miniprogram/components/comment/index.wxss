@@ -43,6 +43,7 @@
 .comment-info-right .dianzanNum {
     margin-right: 6rpx;
 }
+
 .comment-wrapper .comment-content {
     width: 100%;
     display: block;
@@ -69,7 +70,7 @@
     font-size: 30rpx;
     line-height: 40rpx;
     margin-top: -26rpx;
-    display: inline-block;
+    display: block;
 }
 .comment-content .comment-content-response {
     padding: 30rpx 20rpx 0 0;

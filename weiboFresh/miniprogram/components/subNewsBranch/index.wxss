@@ -33,7 +33,7 @@
     z-index: 9;
 }
 .subNews-branch .imgBox {
-    z-index: 99;
+    z-index: 9;
 }
 .subNews-branch-content .canOpenText {
     display: inline-block;
@@ -74,6 +74,7 @@
     margin-right: 6rpx;
 } 
 .subNews-branch .subNews-branch-bottom {
+    z-index: 9;
     margin-top: -6rpx;
     height: 73rpx;
     font-size: 22rpx;
@@ -84,5 +85,6 @@
     margin-right: 68rpx;
 }
 .subNews-branch .subNews-branch-bottom .fenxiang{
+    z-index: 99;
     float: right;
 }

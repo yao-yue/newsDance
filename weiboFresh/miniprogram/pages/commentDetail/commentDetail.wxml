@@ -1,4 +1,7 @@
-<comment comments="{{[comment]}}"></comment>
+<view class="top-box">
+    <comment comments="{{[comment]}}"></comment>
+</view>
+
 
 <view class="comment-sub-wrapper">
 
@@ -17,7 +20,7 @@
         </view>
         <view class="comment-sub-content">
             <block wx:if="index==1">
-                <text >回复@{{comment.fromMan.nickname}}:</text>
+                <text decode="{{true}}">回复@{{comment.fromMan.nickname}}:&ensp;</text>
             </block>
             
             <text >{{responseItem.content}}</text>

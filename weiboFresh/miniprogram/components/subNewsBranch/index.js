@@ -26,6 +26,7 @@ Component({
    */
   data: {
     isFolded: false,
+    shareIsOpen: false,
   },
 
   /**
@@ -39,6 +40,7 @@ Component({
       this.setData({
         isFolded
     })
+    console.log("eeeeeeeeeeeeeeeee")
     },
     goDetail: function(e) {
       wx.navigateTo({
@@ -46,6 +48,12 @@ Component({
         +'&mainTitle='+this.properties.mainTitle + '&mainImg='+this.properties.mainImg 
         +'&mainFocus='+this.properties.mainFocus
       })
-    }
+    },
+    openShare: function (e) {
+      let shareIsOpen = true;
+      this.setData({
+        shareIsOpen
+      })
+    },
   }
 })
