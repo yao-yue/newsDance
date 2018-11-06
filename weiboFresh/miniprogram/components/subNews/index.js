@@ -31,33 +31,18 @@ Component({
    * 组件的初始数据
    */
   data: {
-    topNum: 0,
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    test:function(e) {
-      console.log(e.currentTarget.dataset.hi)
-    },
-    scrolltoupper:function(e){
-      console.log(e)
-      if (e.detail.scrollTop > 100) {
-        this.setData({
-          floorstatus: true
-        });
-      } else {
-        this.setData({
-          floorstatus: false
-        });
-      }
-    },
-
-    goTop: function (e) {  // 一键回到顶部
-      this.setData({
-        topNum: this.data.topNum = 0
-      });
+    goTop: function(e) {
+        // 控制滚动
+        wx.pageScrollTo({
+          scrollTop: .offsetTop,
+          duration: 300
+        })
     },
   }
 })

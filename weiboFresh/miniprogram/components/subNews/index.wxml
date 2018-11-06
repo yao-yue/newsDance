@@ -1,7 +1,7 @@
 
 <blcok wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:for-index="idx" wx:key="index">
-<view class=" {{catalogIndex===idx?'top':'subNews-wrapper'}}">
-     <view class="subNews-subTitle" bind:tap="test" data-hi="{{catalogIndex}}">
+<view class="subNews-wrapper" >
+     <view class="subNews-subTitle" bindtap="goTop" data-hi="{{catalogIndex}}">
         <text >{{subNewsItem.title}}</text>
     </view> 
     <subNewsBranch detailNews="{{subNewsItem.detailNews}}" mainTitle="{{mainTitle}}" mainImg="{{mainImg}}" mainFocus="{{mainFocus}}"></subNewsBranch>

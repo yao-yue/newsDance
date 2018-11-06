@@ -14,6 +14,8 @@ Page({
     this.setData({
       catalogIndex : e.detail.index
     })
+    // this.selectComponent("#list").getList();
+    this.subNews.goTop();
   },
   onLoad: function(options) {
     let dataPack = JSON.parse(options.dataPack)
@@ -42,5 +44,8 @@ Page({
     }).catch(err => {
       console.log(err)
     })
-  }
+  },
+  onReady:function(){
+    this.subNews = this.selectComponent("#subNews");
+  },
 })
