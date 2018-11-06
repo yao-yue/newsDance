@@ -12,6 +12,6 @@
         </view>
     </view>
 </view>
-    <subNews subNews="{{subNews}}" mainTitle="{{topTitle}}" mainImg="{{topImg}}" mainFocus="{{focusNum}}"></subNews>
+    <subNews subNews="{{subNews}}" mainTitle="{{topTitle}}" mainImg="{{topImg}}" mainFocus="{{focusNum}}" catalogIndex="{{catalogIndex}}"></subNews>
     <tabbar isInner="true" mainTitle="{{topTitle}}" mainImg="{{topImg}}" mainFocus="{{focusNum}}"></tabbar>
-    <catalog subNews="{{subNews}}"></catalog>
+    <catalog subNews="{{subNews}}" bindcatalog="onCatalog"></catalog>

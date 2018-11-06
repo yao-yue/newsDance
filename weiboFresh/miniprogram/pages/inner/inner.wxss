@@ -16,7 +16,7 @@ page {
     display: flex;
     flex-direction: column; 
     width: 394rpx;
-    color: #d9d9d9;
+    color: #989898;
     line-height: 64rpx;
     padding-bottom: 30rpx;
 }

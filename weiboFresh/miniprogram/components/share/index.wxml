@@ -17,7 +17,7 @@
                 <text class="1">保存到相册</text>
             </view>
             <view class="shareBar-right">
-            <button open-type="share">
+            <button open-type="share" style="none">
                 <icon type="zhuanfa" size="42" color="#000000"></icon>
                 <text class="1">转发给好友</text>
             </button>
@@ -26,3 +26,4 @@
         </view>
     </view>
 </view>
+

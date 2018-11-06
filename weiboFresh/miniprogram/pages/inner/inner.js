@@ -5,7 +5,15 @@ Page({
     topImg: '',
     topTitle: '',
     subNews: [],
+    catalogIndex: null
 
+  },
+  onCatalog: function(e) {
+    e.detail // 自定义组件触发事件时提供的detail对象
+    console.log(e.detail.index)
+    this.setData({
+      catalogIndex : e.detail.index
+    })
   },
   onLoad: function(options) {
     let dataPack = JSON.parse(options.dataPack)

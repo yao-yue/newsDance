@@ -1,4 +1,4 @@
-<block wx:for="{{comments}}" wx:for-item="item" wx:key="index">
+<block wx:for="{{comments}}" wx:for-item="item" wx:for-index="idx" wx:key="index">
 
 <view class="comment-wrapper">
     <view class="comment-info">
@@ -7,9 +7,9 @@
             <text class="comment-info-username">{{item.fromMan.nickname}}</text>
             <text class="comment-info-time">{{item.time}}</text>
         </view>
-        <view class="comment-info-right">
+        <view class="comment-info-right" >
             <text class="dianzanNum">{{item.likeNum}}</text>
-            <icon type="dianzan" size="26" color="#cdcccc"></icon>
+            <icon type="dianzan" size="{{doneList[idx]?45:26}}" color="{{doneList[idx]?'#b80000':'#cdcccc'}}" bindtap="likeAdd" data-hi="{{item}}" data-idx="{{idx}}"></icon>
         </view>
     </view>
     <view class="comment-content">

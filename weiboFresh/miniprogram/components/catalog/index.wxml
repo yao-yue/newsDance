@@ -5,8 +5,8 @@
             <text class="1">目录</text>
         </view>
         <view class="catalog-main-subTitle">
-        <block wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:key="index">
-            <view class="subTitle-item" >
+        <block wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:for-index="idx" wx:key="index">
+            <view class="subTitle-item" bind:tap="scrollFind" data-hi="{{idx}}">
                     <text>{{subNewsItem.title}}</text>
                 </view>
         </block>

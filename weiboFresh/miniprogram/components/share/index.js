@@ -19,7 +19,7 @@ Component({
     mainFocus: {
       type: Number,
       value: null,
-    }
+    },
   },
 
   /**
@@ -41,6 +41,8 @@ Component({
       this.setData({
         show : _show
       })
-    }
+    },
+
+    
   }
 })

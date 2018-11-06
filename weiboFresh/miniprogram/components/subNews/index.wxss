@@ -1,3 +1,9 @@
+.top {
+    background-color: black;
+    margin-top: 18rpx;
+    box-sizing: border-box;
+}
+
 .subNews-wrapper {
     margin-top: 18rpx;
     background-color: #ffffff;
