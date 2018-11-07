@@ -8,7 +8,7 @@
             <text class="comment-info-time">{{item.time}}</text>
         </view>
         <view class="comment-info-right" >
-            <text class="dianzanNum">{{item.likeNum}}</text>
+            <text class="dianzanNum">{{likeNumList[idx]?likeNumList[idx]:item.likeNum}}</text>
             <icon type="dianzan" size="{{doneList[idx]?45:26}}" color="{{doneList[idx]?'#b80000':'#cdcccc'}}" bindtap="likeAdd" data-hi="{{item}}" data-idx="{{idx}}"></icon>
         </view>
     </view>
