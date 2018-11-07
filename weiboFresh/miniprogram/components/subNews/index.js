@@ -38,9 +38,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goTop: function (e) {
+
+    //用图片的加载来实现进入页面就把offsetList列表数据填充，
+    // 如果把填充offList放在goTOP里的话 第一次点击会无效 用户体验很差
+    onImageLoad: function () {
       var that = this
-      let catalogIndex = that.data.catalogIndex;
       let offsetList = that.data.offsetList;
       const query = wx.createSelectorQuery().in(this)
       query.selectAll('.subNews-wrapper').boundingClientRect(function (rects) {
@@ -52,6 +54,11 @@ Component({
           })
         })
       }).exec()
+    },
+    goTop: function (e) {
+      var that = this
+      let catalogIndex = that.data.catalogIndex;
+      let offsetList = that.data.offsetList;
       wx.pageScrollTo({
             scrollTop: offsetList[catalogIndex],
             duration: 50

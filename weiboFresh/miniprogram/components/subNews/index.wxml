@@ -1,3 +1,6 @@
+<view style="display:none">
+  <image src="{{mainImg}}" bindload="onImageLoad"></image>
+</view>
 <scroll-view>
 <blcok wx:for="{{subNews}}" wx:for-item="subNewsItem" wx:for-index="idx" wx:key="index">
 <view class="subNews-wrapper"  id="the-{{idx}}">
