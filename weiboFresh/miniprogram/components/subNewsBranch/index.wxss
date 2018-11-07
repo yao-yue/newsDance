@@ -52,7 +52,7 @@
 .subNews-branch-content .openTap {
     z-index: 9;
     font-size: 30rpx;
-    color: #5b6a92;
+    color: #2d427c;
 }
 .subNews-branch .subNews-branch-from {
     z-index: 9;

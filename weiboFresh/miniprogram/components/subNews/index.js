@@ -31,7 +31,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    offsetList:[]
   },
 
   /**
@@ -39,21 +39,42 @@ Component({
    */
   methods: {
     goTop: function (e) {
-      console.log('this.data.catalogIndex:'+this.data.catalogIndex)
+      var that = this
+      let catalogIndex = that.data.catalogIndex;
+      let offsetList = that.data.offsetList;
       const query = wx.createSelectorQuery().in(this)
-      query.select(`#the-${this.data.catalogIndex}`).boundingClientRect(function (res) {
-        res.top // 这个组件内 #the-id 节点的上边界坐标
-        console.log('res.top:'+res.top)
-        wx.pageScrollTo({
-          scrollTop: res.top,
-          duration: 30
+      query.selectAll('.subNews-wrapper').boundingClientRect(function (rects) {
+        rects.forEach(function (rect) {
+          rect.top     // 节点的上边界坐标
+          offsetList.push(rect.top)
+          that.setData({
+            offsetList,
+          })
         })
-        res.top = 0  //重置一下
-        console.log('res.top:'+res.top)
       }).exec()
-    },
-    click: function (e) {
-     
+      wx.pageScrollTo({
+            scrollTop: offsetList[catalogIndex],
+            duration: 50
+          })
     }
-    }
-  })
+  }
+})
+
+
+
+// 用查询单个节点的方法
+    //这个还是解决不了   上面的查询所有的终于搞定了！ nice
+      // query.select(`#the-${this.data.catalogIndex}`).boundingClientRect(function (res) {
+      //   res.top // 这个组件内 #the-id 节点的上边界坐标
+      //   console.log('这次节点的上边界坐标'+res.top)
+      //   console.log('这次下拉实际距离：下拉这次+上次距离'+(res.top+that.data.lastTop))
+      //   wx.pageScrollTo({
+      //     scrollTop: (res.top+that.data.lastTop) ,
+      //     duration: 30
+      //   })
+      //   that.setData({
+      //     lastTop: res.top,
+      //     downCount: (that.data.downCount+res.top)
+      //   }) 
+      //   console.log('统计下拉距离总和：'+that.data.downCount)
+      // }).exec()

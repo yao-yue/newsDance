@@ -9,7 +9,7 @@ exports.main = async () => {
     const mainNews = await db.collection("fresh-mainNews").get();
     for(let i = 0; i < mainNews.data.length; i++) {
       const mainNew = mainNews.data[i];
-      let user_id = mainNews.setMan;
+      let user_id = mainNew.setMan;
       const user = await db.collection('fresh-users').where({
         _id: user_id
       }).get();

@@ -32,7 +32,7 @@ Component({
       })
     },
     scrollFind: function(e) {
-      //点击后 实现inner页面小标题置顶
+      //点击后 实现inner页面特定新闻小标题置顶
       let curIndex = e.currentTarget.dataset.hi
       var myEventDetail = {index: curIndex} // detail对象，提供给事件监听函数
       var myEventOption = {} // 触发事件的选项
