@@ -1,4 +1,4 @@
-.top {
+.scrolltoTop {
     background-color: black;
     margin-top: 18rpx;
     box-sizing: border-box;

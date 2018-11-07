@@ -22,27 +22,38 @@ Component({
     },
     catalogIndex: {
       type: Number,
-      value:null
+      value: null
     }
-    
+
   },
 
   /**
    * 组件的初始数据
    */
   data: {
+
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    goTop: function(e) {
-        // 控制滚动
+    goTop: function (e) {
+      console.log('this.data.catalogIndex:'+this.data.catalogIndex)
+      const query = wx.createSelectorQuery().in(this)
+      query.select(`#the-${this.data.catalogIndex}`).boundingClientRect(function (res) {
+        res.top // 这个组件内 #the-id 节点的上边界坐标
+        console.log('res.top:'+res.top)
         wx.pageScrollTo({
-          scrollTop: .offsetTop,
-          duration: 300
+          scrollTop: res.top,
+          duration: 30
         })
+        res.top = 0  //重置一下
+        console.log('res.top:'+res.top)
+      }).exec()
     },
-  }
-})
+    click: function (e) {
+     
+    }
+    }
+  })
