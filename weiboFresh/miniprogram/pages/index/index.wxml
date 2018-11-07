@@ -1,11 +1,10 @@
-<wxs src="../../tools/time.wxs" module="time" />
 
 <block wx:for="{{mainNewsList}}" wx:for-item="newsItem" wx:key="index">
     <block wx:if="{{newsItem.isShow}}">
         <newsBox isOld="{{newsItem.isOld}}" 
                 title="{{newsItem.title}}" 
                 focusNum="{{newsItem.focusNum}}" 
-                time="{{time.formatTime(newsItem.time)}}" 
+                time="{{newsItem.time}}" 
                 imgUrl="{{newsItem.image}}"
                 subNews="{{newsItem.subNews}}"
                 name="{{newsItem.setMan.nickname}}">
