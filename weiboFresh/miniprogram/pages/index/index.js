@@ -8,7 +8,9 @@ Page({
   onLoad: function () {
     var that = this;
     wx.cloud.callFunction({
+      // 声明调用的函数名
       name: 'mainNewsGet',
+      // data里面存放的数据可以传递给云函数的event  效果：event.a = 1
       data: {
         a: 1
       }

@@ -31,6 +31,9 @@ Page({
     let mainImg = options.mainImg
     let mainFocus = options.mainFocus
     
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.cloud.callFunction({
       name: 'commentsGet',
       data: {
@@ -48,6 +51,7 @@ Page({
         mainTitle,
         mainFocus
       })
+      wx.hideLoading()
       console.log(this.data.mainFocus)
     }).catch(err => {
       console.log(err)

@@ -58,10 +58,11 @@ Component({
     goTop: function (e) {
       var that = this
       let catalogIndex = that.data.catalogIndex;
+      //这里offsetList是一个data里面的数据，来保存所有的节点的上边距坐标
       let offsetList = that.data.offsetList;
       wx.pageScrollTo({
-            scrollTop: offsetList[catalogIndex],
-            duration: 50
+            scrollTop: offsetList[catalogIndex],   //滚动到具体数值所在的位置
+            duration: 50                          //执行滚动所花的时间
           })
     }
   }

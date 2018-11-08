@@ -25,7 +25,9 @@ Page({
     let topImg = dataPack.imgUrl
     let topTitle = dataPack.title
     let subNews = dataPack.subNews
-
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.cloud.callFunction({
       name: 'innerResourceGet',
       data: {
@@ -41,6 +43,7 @@ Page({
         username
       })
       console.log(this.data.focusNum)
+      wx.hideLoading()
     }).catch(err => {
       console.log(err)
     })
