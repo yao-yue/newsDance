@@ -30,7 +30,7 @@
                     </view>
                     </block>
                 </block>
-                <text class="responseNum" bind:tap="goCommentDetail" data-hi="{{item}}">共{{item.response.length}}条回复 ></text>
+                <text class="responseNum" bind:tap="goCommentDetail" data-hi="{{item}}" data-idx="{{idx}}">共{{item.response.length}}条回复 ></text>
             </view>
         </view>
 

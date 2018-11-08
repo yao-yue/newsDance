@@ -15,10 +15,15 @@ Page({
   onLoad: function (options) {
     console.log(options.dataPack)
     console.log(JSON.parse(options.dataPack))
+    console.log('------------')
+    console.log(JSON.parse(options.likeNum))
     let dataPack = JSON.parse(options.dataPack)
+    let supLikeNum = JSON.parse(options.likeNum)
+    //成功让下一个页面的likeNum也进行更新   三元表达式是为了判断likeLum是否存在为null的时候comment里js传的时候就判为-1了
+    dataPack.likeNum = (supLikeNum===-1 ? dataPack.likeNum: supLikeNum);
     this.setData({
       response: dataPack.response,
-      comment: dataPack
+      comment: dataPack,
     })
 
     console.log(this.data.comment)

@@ -26,6 +26,7 @@ Component({
     goCommentDetail: function(e) {
       wx.navigateTo({
         url: '/pages/commentDetail/commentDetail?dataPack='+ JSON.stringify(e.currentTarget.dataset.hi)
+        +'&likeNum='+ JSON.stringify(this.data.likeNumList[e.currentTarget.dataset.idx] || -1)
       })
     },
 
