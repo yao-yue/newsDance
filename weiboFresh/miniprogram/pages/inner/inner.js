@@ -8,15 +8,6 @@ Page({
     catalogIndex: null
 
   },
-  onCatalog: function(e) {
-    e.detail // 自定义组件触发事件时提供的detail对象
-    console.log(e.detail.index)
-    this.setData({
-      catalogIndex : e.detail.index
-    })
-    // this.selectComponent("#list").getList();
-    this.subNews.goTop();
-  },
   onLoad: function(options) {
     let dataPack = JSON.parse(options.dataPack)
     console.log(dataPack)
@@ -48,7 +39,18 @@ Page({
       console.log(err)
     })
   },
+  //绑定组件，从而能够在onCatalog函数中调用组件的函数    页面对->子组件的通信
   onReady:function(){
     this.subNews = this.selectComponent("#subNews");
+  },
+  onCatalog: function(e) {
+    e.detail // 自定义组件触发事件时提供的detail对象
+    console.log(e.detail.index)
+    this.setData({
+      catalogIndex : e.detail.index
+    })
+    //如果调用频繁，在onReady中声明还是比较好
+    // this.subNews = this.selectComponent("#subNews");
+    this.subNews.goTop();
   },
 })

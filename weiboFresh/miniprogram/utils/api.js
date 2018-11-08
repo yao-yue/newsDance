@@ -60,6 +60,7 @@ var getTip = function (date) {
     return tip
 }
 
+//向外暴露
 module.exports = {
     formatTime: formatTime,
     getTip: getTip
