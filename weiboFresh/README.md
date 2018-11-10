@@ -1,6 +1,6 @@
-## &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 首先感谢您的拜访~~
-<br>
-<br>
+## &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 首先感谢您的拜访~~<br><br>
+
+
 ### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;项目效果图：
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Image text](https://happybirdwe.github.io/newsDance/%E5%BE%AE%E5%8D%9A%E9%B2%9C%E7%9F%A5_spec/weiboFreshGif/alll.gif)
 
