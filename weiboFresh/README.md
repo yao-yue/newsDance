@@ -1,11 +1,11 @@
 ## &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 首先感谢您的拜访~~
 
-### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;项目效果图：
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Image text](https://happybirdwe.github.io/newsDance/%E5%BE%AE%E5%8D%9A%E9%B2%9C%E7%9F%A5_spec/weiboFreshGif/alll.gif)
+### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;项目效果图：
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Image text](https://happybirdwe.github.io/newsDance/%E5%BE%AE%E5%8D%9A%E9%B2%9C%E7%9F%A5_spec/weiboFreshGif/alll.gif)
 
 <br>
 
-###有关这个项目的开发过程的交流
+### 有关这个项目的开发过程的交流
 ------------------------------------------------------------------------------------
 ### 一、 组件化思想
 开发一个完整的小程序时，我们应该先分析其内部的结构。重复的结构抽离出来作为组件，组件非常的灵活，可以嵌入一个页面或多个页面。<br>
