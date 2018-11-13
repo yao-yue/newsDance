@@ -2,7 +2,7 @@
 
 
 ### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;项目效果图：<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Image text](https://happybirdwe.github.io/newsDance/%E5%BE%AE%E5%8D%9A%E9%B2%9C%E7%9F%A5_spec/weiboFreshGif/alll.gif)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![](https://user-gold-cdn.xitu.io/2018/11/8/166f2faefbf06e10?w=278&h=500&f=gif&s=4789618)
 
 <br>
 
