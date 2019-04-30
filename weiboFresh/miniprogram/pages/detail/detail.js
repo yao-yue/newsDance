@@ -57,54 +57,26 @@ Page({
       console.log(err)
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  modifyComments(id) {
+    console.log(id)
+    console.log(this.data.comments);
+    let comments = this.data.comments;
+    console.log('这个函数可以被调用');
+    for(let i=0; i<comments.length; i++) {
+      console.log(comments[i]._id)
+      if(id == comments[i]._id) {
+        comments[i].likeNum += 10
+        console.log('失效？')
+      }
+    }
+    this.setData({
+      comments,
+    })
+    this.selectComponent("#comment").data.likeNumList = [];
     
   },
-
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onReady: function() {
+    //获得comments组件
+    
   }
 })

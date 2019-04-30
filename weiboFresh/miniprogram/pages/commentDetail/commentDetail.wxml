@@ -1,5 +1,5 @@
 <view class="top-box">
-    <comment comments="{{[comment]}}"></comment>
+    <comment comments="{{[comment]}}" bindmyevent="onTopLike"></comment>
 </view>
 
 

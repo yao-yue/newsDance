@@ -27,6 +27,6 @@
     <block wx:if="{{comments.length==0}}">
         <text class="noComment">还没有评论~~</text>
     </block>
-    <comment comments="{{comments}}" id="comment"></comment>
+    <comment  comments="{{comments}}"  id="comment"></comment>
 </view>
 
