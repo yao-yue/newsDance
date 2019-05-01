@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/inner/inner",
     "pages/commentDetail/commentDetail",
@@ -15,6 +16,3 @@
   },
   "cloud": true
 }
-
-
-

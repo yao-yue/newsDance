@@ -1,0 +1,26 @@
+
+<!-- <view class="login-wrapper" style="text-align:center">
+this is a simple login page
+<button open-type="getUserInfo" bindtap="login" type="primary" style="width:80%">
+ login
+</button>
+
+<span>**********一个不华丽的分割线************</span> -->
+<!-- </view> -->
+
+<view class="avatar" style="width:160rpx;height:160rpx;margin:60rpx auto;border-radius:50%;">
+<open-data type="userAvatarUrl"></open-data>
+</view>
+<view class="username" style="text-align:center"><open-data type="userNickName"></open-data></view>
+
+<!-- 需要使用 button 来授权登录 -->
+<button
+  wx:if="{{canIUse}}"
+  open-type="getUserInfo"
+  bindgetuserinfo="bindGetUserInfo"
+  type="primary"
+  style="width:80%;margin-top:30rpx;"
+>
+  授权登录
+</button>
+<view wx:else>请升级微信版本</view>
