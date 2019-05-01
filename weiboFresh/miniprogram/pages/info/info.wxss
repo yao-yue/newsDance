@@ -20,7 +20,7 @@ page {
     height: 180rpx;
     width: 180rpx;
     border-radius: 90rpx;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .info-wrapper .info-username {
     line-height: 82rpx;

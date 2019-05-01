@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tabbar": "../../components/tabbar/index"
+  }
 }

@@ -1,4 +1,5 @@
 // miniprogram/pages/login/login.js
+const app = getApp();
 Page({
 
 
@@ -32,6 +33,9 @@ Page({
   },
   cloudLogin(userInfo) {
     //调用login时就直接调用云函数即可
+    wx.showLoading({
+      title: '登录中...'
+    });
     wx.cloud.callFunction({
       // 声明调用的函数名
       name: 'userLogin',
@@ -43,6 +47,14 @@ Page({
       }
     }).then(res => {
       console.log(res)
+      wx.hideLoading({})
+      if(res.result.loginStatue==='success') {
+        app.globalData.auth = 0;
+        app.globalData.userInfo = userInfo;
+        wx.reLaunch({
+          url: '../info/info'
+        })
+      }
     }).catch(err => {
       console.log(err)
     })

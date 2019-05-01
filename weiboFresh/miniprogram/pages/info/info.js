@@ -1,11 +1,13 @@
-// miniprogram/pages/info/info.js
+
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    avatar: '../../images/Draven_passive.png',
+    username:　'未登录',
   },
   goExit: () => {
     wx.navigateTo({
@@ -14,8 +16,8 @@ Page({
   },
   click: () => {
     wx.previewImage({
-      current: 'https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg', // 当前显示图片的http链接
-      urls: ['https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg','https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg','https://tvax4.sinaimg.cn/crop.0.10.492.492.180/006x4mSyly8fgb8eyg288j30do0e8q3u.jpg'] // 需要预览的图片http链接列表
+      current: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big119000.jpg', // 当前显示图片的http链接
+      urls: ['https://ossweb-img.qq.com/images/lol/web201310/skin/small119001.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/small119004.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/small119002.jpg'] // 需要预览的图片http链接列表
     })
   },
 
@@ -23,55 +25,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(app.globalData.userInfo) {
+      this.setData({
+        avatar : app.globalData.userInfo.avatar,
+        username : app.globalData.userInfo.username
+      })
+    }
+    
+    // let userInfo = app.global
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

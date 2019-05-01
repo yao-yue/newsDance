@@ -31,12 +31,19 @@ Component({
     goHome: (e) => {
       // 判断是否为主页面防止原地跳转
       if(!e.currentTarget.dataset.hi){
-        wx.redirectTo({
+        wx.reLaunch({
           url: "/pages/index/index"
         })
       }
     },
     goInfo: (e) => {
+      console.log(app.globalData)
+      if(app.globalData.auth == -1) {
+        wx.redirectTo({
+          url: '/pages/login/login'
+        })
+        return;
+      }
         if(e.currentTarget.dataset.hi){
         wx.redirectTo({
           url: "/pages/info/info"

@@ -7,7 +7,7 @@ this is a simple login page
 
 <span>**********一个不华丽的分割线************</span> -->
 <!-- </view> -->
-
+<tabbar></tabbar>
 <view class="avatar" style="width:160rpx;height:160rpx;margin:60rpx auto;border-radius:50%;">
 <open-data type="userAvatarUrl"></open-data>
 </view>
