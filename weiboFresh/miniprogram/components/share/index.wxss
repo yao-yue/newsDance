@@ -94,4 +94,24 @@ page .share-wrapper {
     justify-content: center;
     align-items: center;
     font-size: 26rpx;
+    background-color: #ffffff; 
 }
+.shareBar .shareBtn {
+     justify-content: flex-start !important;
+}
+
+.shareBtn {
+    border: none;
+    border-radius: 0;
+
+  }
+.shareBtn::after {
+    border: none;
+  }
+  .shareBtn-font {
+      margin-top: -50rpx;
+      /* position: absolute;
+      top: -20rpx;   */
+      /* margin-top: 2rpx;
+      font-size: 28rpx; */
+  }

@@ -42,7 +42,9 @@ Component({
         show : _show
       })
     },
-
+    onShareAppMessage() {
+      console.log('hello')
+    }
     
   }
 })

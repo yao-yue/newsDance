@@ -5,7 +5,7 @@
         <text class="focusNum">{{mainFocus}}人关注</text>
         <image class="miniAppImg" src="../../images/HappyBirdwe.jpg"></image>
             <text class="share-content-handle">长按二维码查看这只绿鸟</text>
-            <text class="share-content-intro">转发这只绿鸟，今年会给你带来好运，万BUG不侵~~</text>
+            <text class="share-content-intro">神奇的绿鸟,专吃BUG~~</text>
     </view>
     <view class="share-bottom">
         <view class="shareText">
@@ -16,13 +16,13 @@
                 <icon type="xiazai" size="42" color="#000000"></icon>
                 <text class="1">保存到相册</text>
             </view>
-            <view class="shareBar-right">
-            <button open-type="share" style="none">
+            <!-- <view class="shareBar-right"> -->
+            <button open-type="share" class="shareBtn shareBar-right" >
                 <icon type="zhuanfa" size="42" color="#000000"></icon>
-                <text class="1">转发给好友</text>
+                <text class="shareBtn-font">转发给好友</text>
             </button>
                 
-            </view>
+            <!-- </view> -->
         </view>
     </view>
 </view>
