@@ -62,6 +62,7 @@
 }
 .detail-comment {
     width: 100%;
+    padding-bottom: 200rpx;
 }
 .detail-comment .detail-comment-topBar {
     box-sizing: border-box;
@@ -71,6 +72,20 @@
     font-size: 30rpx;
     padding-left: 40rpx;
     position: relative;
+}
+.comment-btn {
+    z-index: 9;
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+    color: #ffffff;
+    display: block;
+    background-color: #f7ca4b;
+    height: 40rpx;
+    border-radius: 10rpx;
+    line-height: 40rpx;
+    padding: 4rpx;
+    margin-top: 10rpx;
 }
 .detail-comment-topBar::after {
     content: "";
@@ -90,4 +105,28 @@
     font-size: 26rpx;
     color: #b1b1b1;
     text-align: center;
+}
+.comment-box {
+    background-color: blueviolet;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10%;
+    border: #b1b1b1 1px solid;
+    border-radius: 10rpx;
+    height: 60rpx;
+}
+.comment-box .comment-content {
+    width: 80%;
+    border: solid yellow 1px;
+    background-color: #ffffff;
+}
+.comment-icon, .send-icon {
+    width: 36rpx;
+    height: 36rpx;
 }

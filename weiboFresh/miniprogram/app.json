@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/detail/detail",
     "pages/login/login",
     "pages/inner/inner",
     "pages/commentDetail/commentDetail",
-    "pages/detail/detail",
     "pages/exit/exit",
     "pages/info/info"
   ],

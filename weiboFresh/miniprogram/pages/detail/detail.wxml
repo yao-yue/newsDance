@@ -23,10 +23,20 @@
 <view class="detail-comment">
     <view class="detail-comment-topBar">
         <text class="bar">热门评论</text>
+        <text class="comment-btn" bind:tap="commentIt">我要评论</text>
+         <block wx:if="{{goComment}}">
+    <view class="comment-box">
+    <!-- <image class="comment-icon" src="../../images/comment-icon.png" mode="aspectFill"></image> -->
+    <input class="comment-content" maxlength="48" bindinput="mycomment" type="text"></input>
+    <image class="send-icon" src="../../images/send-icon.png" mode="aspectFill" bind:tap="submitComment"></image>
+    </view>
+</block>
     </view>
     <block wx:if="{{comments.length==0}}">
         <text class="noComment">还没有评论~~</text>
     </block>
+   
     <comment  comments="{{comments}}"  id="comment"></comment>
 </view>
+
 
